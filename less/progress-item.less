@@ -1,5 +1,5 @@
 .progress-item {
-  width: 50%;
+  width: 38%;
   text-align: center;
   &__value {
     font-family: "Geometria", sans-serif;
@@ -20,8 +20,25 @@
     font-family: "Geometria", sans-serif;
     font-size: 22px;
     color: #000000;
+    align-self: center;
     .progress-item__description {
       font-size: 38px;
     }
+  }
+  &:nth-child(1) {
+    align-self: flex-end;
+  }
+  &:nth-child(2) {
+    align-self: flex-end;
+  }
+
+  &:nth-child(4) {
+    align-self: flex-start;
+    padding-bottom: 17px;
+
+  }
+  &:nth-child(5) {
+    align-self: flex-start;
+    padding-bottom: 17px;
   }
 }

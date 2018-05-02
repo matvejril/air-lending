@@ -21,7 +21,7 @@ var configs = {
     }
 };
 
-gulp.task('default', ['less'], function() {
+gulp.task('default', ['less', 'js'], function() {
     browserSync.init({
         server: "./"
     });
@@ -37,13 +37,13 @@ gulp.task('less', function() {
         .pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
-// gulp.task('js', function() {
-//     return gulp.src(configs.src.js)
-//         .pipe(browserify({
-//             insertGlobals : true,
-//             debug : !gulp.env.production
-//         }))
-//         .pipe(rename('bundle.js'))
-//         .pipe(gulp.dest(configs.dist.js))
-//         .pipe(browserSync.stream({match: '**/*.js' }));
-// });
+gulp.task('js', function() {
+    return gulp.src(configs.src.js)
+        .pipe(browserify({
+            insertGlobals : true,
+            debug : !gulp.env.production
+        }))
+        .pipe(rename('bundle.js'))
+        .pipe(gulp.dest(configs.dist.js))
+        .pipe(browserSync.stream({match: '**/*.js' }));
+});

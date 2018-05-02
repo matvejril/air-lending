@@ -10,11 +10,17 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <script type="text/javascript" src="plugins/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="plugins/slick/slick.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
     <link href="css/index.css" rel="stylesheet">
 
-    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.js"></script>
+    <!--<script type="text/javascript" src="plugins/jquery.js"></script>-->
+
+    <script type="text/javascript" src="scripts/bundle.js"></script>
 
 </head>
 
@@ -142,22 +148,22 @@
                 <div class="progress__content">
                     <div class="progress-item">
                         <h5 class="progress-item__value">10</h5>
-                        <p class="progress-item__description">лет на рынке веб-разработки</p>
+                        <p class="progress-item__description">лет на рынке<br> веб-разработки</p>
                     </div>
                     <div class="progress-item">
                         <h5 class="progress-item__value">15</h5>
-                        <p class="progress-item__description">готовых интернет-магазинов</p>
+                        <p class="progress-item__description">готовых<br> интернет-магазинов</p>
                     </div>
                     <div class="progress-item progress-item_center">
-                        <p class="progress-item__description">Наши достижения и принципы работы</p>
+                        <p class="progress-item__description">Наши достижения<br> и принципы работы</p>
                     </div>
                     <div class="progress-item">
                         <h5 class="progress-item__value">78</h5>
-                        <p class="progress-item__description">процентов клиентов остаются с нами</p>
+                        <p class="progress-item__description">процентов клиентов<br> остаются с нами</p>
                     </div>
                     <div class="progress-item">
                         <h5 class="progress-item__value">5</h5>
-                        <p class="progress-item__description">человек работают над проектом</p>
+                        <p class="progress-item__description">человек работают<br> над проектом</p>
                     </div>
                 </div>
             </div>
@@ -169,9 +175,12 @@
         <div class="projects__title">Наши работы</div>
         <div class="projects-gallery">
             <div class="projects-gallery-nav">
-                 <div class="projects-gallery-nav__item">
-                     <img src="images/projects/logos/s-konto.png" alt="s-konto img">
-                 </div>
+                <div class="projects-gallery-nav__item">
+                    <!--<div class="projects-gallery-nav__item-helper">-->
+                        <!---->
+                    <!--</div>-->
+                    <img src="images/projects/logos/s-konto.png" alt="s-konto img">
+                </div>
                 <div class="projects-gallery-nav__item">
                     <img src="images/projects/logos/floraOpt.png" alt="floraOpt img">
                 </div>
@@ -184,131 +193,165 @@
                 <div class="projects-gallery-nav__item">
                     <img src="images/projects/logos/yans.png" alt="yans img">
                 </div>
+                <div class="projects-gallery-nav__item">
+                    <img src="images/projects/logos/yans.png" alt="yans img">
+                </div>
             </div>
 
             <div class="projects-gallery-main">
-                <div class="projects-gallery-main__item">
-                    <div class="projects-gallery-main__view">
-                        <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
-                    </div>
-                    <div class="projects-gallery-main__description">
-                        <h4 class="projects-gallery-main__title">
-                            FloraOpt — цветочная продукция
-                            в розницу по оптовым ценам
-                        </h4>
-                        <div class="projects-gallery-main__content">
-                            <p>
-                                Наша компания на рынке с 2012 года. За это время мы открыли более
-                                20 магазинов в трех городах России. Предлагая огромный ассортимент
-                                и высокое качество свежих цветов своим клиентам, мы заняли
-                                лидирующую позицию на рынке города Новосибирска. Сейчас мы
-                                крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
-                            </p>
+                <div class="projects-gallery-main__list">
+                    <div class="projects-gallery-main__item">
+                        <div class="projects-gallery-main__view">
+                            <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                         </div>
-                        <div class="projects-gallery-main__actions">
-                            <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                            <button class="projects-gallery-main__get-this-case">Подробный кейс</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-gallery-main__item">
-                    <div class="projects-gallery-main__view">
-                        <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
-                    </div>
-                    <div class="projects-gallery-main__description">
-                        <h4 class="projects-gallery-main__title">
-                            FloraOpt — цветочная продукция
-                            в розницу по оптовым ценам
-                        </h4>
-                        <div class="projects-gallery-main__content">
-                            <p>
-                                Наша компания на рынке с 2012 года. За это время мы открыли более
-                                20 магазинов в трех городах России. Предлагая огромный ассортимент
-                                и высокое качество свежих цветов своим клиентам, мы заняли
-                                лидирующую позицию на рынке города Новосибирска. Сейчас мы
-                                крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
-                            </p>
-                        </div>
-                        <div class="projects-gallery-main__actions">
-                            <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                            <button class="projects-gallery-main__get-this-case">Подробный кейс</button>
+                        <div class="projects-gallery-main__description">
+                            <h4 class="projects-gallery-main__title">
+                                FloraOpt — цветочная продукция
+                                в розницу по оптовым ценам
+                            </h4>
+                            <div class="projects-gallery-main__content">
+                                <p>
+                                    Наша компания на рынке с 2012 года. За это время мы открыли более
+                                    20 магазинов в трех городах России. Предлагая огромный ассортимент
+                                    и высокое качество свежих цветов своим клиентам, мы заняли
+                                    лидирующую позицию на рынке города Новосибирска. Сейчас мы
+                                    крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
+                                </p>
+                            </div>
+                            <div class="projects-gallery-main__actions">
+                                <button class="projects-gallery-main__detail-case">Подробный кейс</button>
+                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="projects-gallery-main__item">
-                    <div class="projects-gallery-main__view">
-                        <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
-                    </div>
-                    <div class="projects-gallery-main__description">
-                        <h4 class="projects-gallery-main__title">
-                            FloraOpt — цветочная продукция
-                            в розницу по оптовым ценам
-                        </h4>
-                        <div class="projects-gallery-main__content">
-                            <p>
-                                Наша компания на рынке с 2012 года. За это время мы открыли более
-                                20 магазинов в трех городах России. Предлагая огромный ассортимент
-                                и высокое качество свежих цветов своим клиентам, мы заняли
-                                лидирующую позицию на рынке города Новосибирска. Сейчас мы
-                                крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
-                            </p>
+                    <div class="projects-gallery-main__item">
+                        <div class="projects-gallery-main__view">
+                            <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                         </div>
-                        <div class="projects-gallery-main__actions">
-                            <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                            <button class="projects-gallery-main__get-this-case">Подробный кейс</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-gallery-main__item">
-                    <div class="projects-gallery-main__view">
-                        <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
-                    </div>
-                    <div class="projects-gallery-main__description">
-                        <h4 class="projects-gallery-main__title">
-                            FloraOpt — цветочная продукция
-                            в розницу по оптовым ценам
-                        </h4>
-                        <div class="projects-gallery-main__content">
-                            <p>
-                                Наша компания на рынке с 2012 года. За это время мы открыли более
-                                20 магазинов в трех городах России. Предлагая огромный ассортимент
-                                и высокое качество свежих цветов своим клиентам, мы заняли
-                                лидирующую позицию на рынке города Новосибирска. Сейчас мы
-                                крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
-                            </p>
-                        </div>
-                        <div class="projects-gallery-main__actions">
-                            <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                            <button class="projects-gallery-main__get-this-case">Подробный кейс</button>
+                        <div class="projects-gallery-main__description">
+                            <h4 class="projects-gallery-main__title">
+                                FloraOpt — цветочная продукция
+                                в розницу по оптовым ценам
+                            </h4>
+                            <div class="projects-gallery-main__content">
+                                <p>
+                                    Наша компания на рынке с 2012 года. За это время мы открыли более
+                                    20 магазинов в трех городах России. Предлагая огромный ассортимент
+                                    и высокое качество свежих цветов своим клиентам, мы заняли
+                                    лидирующую позицию на рынке города Новосибирска. Сейчас мы
+                                    крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
+                                </p>
+                            </div>
+                            <div class="projects-gallery-main__actions">
+                                <button class="projects-gallery-main__detail-case">Подробный кейс</button>
+                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="projects-gallery-main__item">
-                    <div class="projects-gallery-main__view">
-                        <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
-                    </div>
-                    <div class="projects-gallery-main__description">
-                        <h4 class="projects-gallery-main__title">
-                            FloraOpt — цветочная продукция
-                            в розницу по оптовым ценам
-                        </h4>
-                        <div class="projects-gallery-main__content">
-                            <p>
-                                Наша компания на рынке с 2012 года. За это время мы открыли более
-                                20 магазинов в трех городах России. Предлагая огромный ассортимент
-                                и высокое качество свежих цветов своим клиентам, мы заняли
-                                лидирующую позицию на рынке города Новосибирска. Сейчас мы
-                                крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
-                            </p>
+
+                    <div class="projects-gallery-main__item">
+                        <div class="projects-gallery-main__view">
+                            <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                         </div>
-                        <div class="projects-gallery-main__actions">
-                            <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                            <button class="projects-gallery-main__get-this-case">Подробный кейс</button>
+                        <div class="projects-gallery-main__description">
+                            <h4 class="projects-gallery-main__title">
+                                FloraOpt — цветочная продукция
+                                в розницу по оптовым ценам
+                            </h4>
+                            <div class="projects-gallery-main__content">
+                                <p>
+                                    Наша компания на рынке с 2012 года. За это время мы открыли более
+                                    20 магазинов в трех городах России. Предлагая огромный ассортимент
+                                    и высокое качество свежих цветов своим клиентам, мы заняли
+                                    лидирующую позицию на рынке города Новосибирска. Сейчас мы
+                                    крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
+                                </p>
+                            </div>
+                            <div class="projects-gallery-main__actions">
+                                <button class="projects-gallery-main__detail-case">Подробный кейс</button>
+                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-gallery-main__item">
+                        <div class="projects-gallery-main__view">
+                            <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                        </div>
+                        <div class="projects-gallery-main__description">
+                            <h4 class="projects-gallery-main__title">
+                                FloraOpt — цветочная продукция
+                                в розницу по оптовым ценам
+                            </h4>
+                            <div class="projects-gallery-main__content">
+                                <p>
+                                    Наша компания на рынке с 2012 года. За это время мы открыли более
+                                    20 магазинов в трех городах России. Предлагая огромный ассортимент
+                                    и высокое качество свежих цветов своим клиентам, мы заняли
+                                    лидирующую позицию на рынке города Новосибирска. Сейчас мы
+                                    крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
+                                </p>
+                            </div>
+                            <div class="projects-gallery-main__actions">
+                                <button class="projects-gallery-main__detail-case">Подробный кейс</button>
+                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-gallery-main__item">
+                        <div class="projects-gallery-main__view">
+                            <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                        </div>
+                        <div class="projects-gallery-main__description">
+                            <h4 class="projects-gallery-main__title">
+                                FloraOpt — цветочная продукция
+                                в розницу по оптовым ценам
+                            </h4>
+                            <div class="projects-gallery-main__content">
+                                <p>
+                                    Наша компания на рынке с 2012 года. За это время мы открыли более
+                                    20 магазинов в трех городах России. Предлагая огромный ассортимент
+                                    и высокое качество свежих цветов своим клиентам, мы заняли
+                                    лидирующую позицию на рынке города Новосибирска. Сейчас мы
+                                    крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
+                                </p>
+                            </div>
+                            <div class="projects-gallery-main__actions">
+                                <button class="projects-gallery-main__detail-case">Подробный кейс</button>
+                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-gallery-main__item">
+                        <div class="projects-gallery-main__view">
+                            <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                        </div>
+                        <div class="projects-gallery-main__description">
+                            <h4 class="projects-gallery-main__title">
+                                FloraOpt — цветочная продукция
+                                в розницу по оптовым ценам
+                            </h4>
+                            <div class="projects-gallery-main__content">
+                                <p>
+                                    Наша компания на рынке с 2012 года. За это время мы открыли более
+                                    20 магазинов в трех городах России. Предлагая огромный ассортимент
+                                    и высокое качество свежих цветов своим клиентам, мы заняли
+                                    лидирующую позицию на рынке города Новосибирска. Сейчас мы
+                                    крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
+                                </p>
+                            </div>
+                            <div class="projects-gallery-main__actions">
+                                <button class="projects-gallery-main__detail-case">Подробный кейс</button>
+                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
 
