@@ -1,0 +1,92 @@
+.new-project-form {
+  max-width: 470px;
+  margin: 0 auto 82px auto;
+  &__input {
+    width: 100%;
+    padding: 19px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #b2b2b2;
+    border-radius: 35px;
+    background: transparent;
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 17px;
+    color: #222222;
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+
+    &::-webkit-input-placeholder {color:#b2b2b2;}
+    &::-moz-placeholder          {color:#b2b2b2;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:#b2b2b2;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:#b2b2b2;}
+
+    &:focus {
+      background-color: #ffffff;
+      border-color: #00a1e4;
+    }
+    &:focus::-webkit-input-placeholder { color:transparent; }
+    &:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+    &:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+    &:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+  }
+  &__textarea {
+    width: 100%;
+    margin: 0 0 35px 0;
+    color: #222222;
+    background: transparent;
+    border: 2px solid #b2b2b2;
+    border-radius: 30px;
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 17px;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+    text-align: center;
+    padding: 18px 15px 23px 15px;
+
+    &::-webkit-input-placeholder {color:#b2b2b2;}
+    &::-moz-placeholder          {color:#b2b2b2;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:#b2b2b2;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:#b2b2b2;}
+
+    &:focus {
+      background-color: #ffffff;
+      border-color: #00a1e4;
+    }
+    &:focus::-webkit-input-placeholder { color:transparent; }
+    &:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+    &:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+    &:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__affix {
+    font-family: "Geometria-Bold", sans-serif;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 49px;
+    box-sizing: border-box;
+    color: #00a1e4;
+    background: url(../images/icons/affix.png) no-repeat 5px 0 transparent;
+    border: none;
+    outline: none;
+    align-self: center
+  }
+
+  &__submit {
+    margin: 0;
+    padding: 21px 43px;
+    border: none;
+    border-radius: 27px;
+    font-size: 16px;
+    background-color: #ed1c2b;
+    font-family: "Geometria-Medium", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    outline: none;
+    align-self: center
+  }
+}
