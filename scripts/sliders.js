@@ -11,8 +11,6 @@
             infinite: true,
             useTransform: true,
             speed: 400,
-            // centerMode: true,
-            // centerPadding: '100px',
             cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)'
         });
 
@@ -56,8 +54,6 @@
             infinite: false,
             useTransform: true,
             speed: 400,
-            // centerMode: true
-            // centerPadding: '100px',
             cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)'
         });
 

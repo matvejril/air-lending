@@ -1,0 +1,186 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  &__window {
+    width: 590px;
+    padding: 21px 17px 80px 17px;
+    border: none;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    display: block;
+  }
+
+  &__head {
+    margin-bottom: 25px;
+    text-align: right;
+  }
+  &__btn-close {
+    background: url(../images/icons/popup-close.png) no-repeat center center transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    padding: 0;
+    -webkit-text-stroke: 2px white;
+  }
+
+  &__main {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  &__title {
+    display: inline-block;
+    margin: 0 0 50px 0;
+    width: 100%;
+    font-family: "Geometria-ExtaBold", sans-serif;
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #3c3c3c;
+    text-align: center;
+  }
+
+  &__form {
+    .horizontal-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      input {
+        display: inline-block;
+        width: 49%;
+        padding: 19px 15px 19px 34px;
+        border: 2px solid #b2b2b2;
+        margin: 0;
+        border-radius: 35px;
+        background: transparent;
+        font-family: "Roboto-Light", sans-serif;
+        font-size: 17px;
+        color: #222222;
+        outline: none;
+        box-sizing: border-box;
+
+
+        &::-webkit-input-placeholder {color:#b2b2b2;}
+        &::-moz-placeholder          {color:#b2b2b2;}/* Firefox 19+ */
+        &:-moz-placeholder           {color:#b2b2b2;}/* Firefox 18- */
+        &:-ms-input-placeholder      {color:#b2b2b2;}
+
+        &:focus {
+          background-color: #ffffff;
+          border-color: #00a1e4;
+        }
+        &:focus::-webkit-input-placeholder { color:transparent; }
+        &:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+        &:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+        &:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+      }
+    }
+    textarea {
+      width: 100%;
+      margin: 0 0 35px 0;
+      padding: 18px 34px 23px 34px;
+      color: #222222;
+      background: transparent;
+      border: 2px solid #b2b2b2;
+      border-radius: 30px;
+      font-family: "Roboto-Light", sans-serif;
+      font-size: 17px;
+      box-sizing: border-box;
+      resize: none;
+      outline: none;
+
+
+      &::-webkit-input-placeholder {color:#b2b2b2;}
+      &::-moz-placeholder          {color:#b2b2b2;}/* Firefox 19+ */
+      &:-moz-placeholder           {color:#b2b2b2;}/* Firefox 18- */
+      &:-ms-input-placeholder      {color:#b2b2b2;}
+
+      &:focus {
+        background-color: #ffffff;
+        border-color: #00a1e4;
+      }
+      &:focus::-webkit-input-placeholder { color:transparent; }
+      &:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+      &:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+      &:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__compliance {
+    max-width: 280px;
+    margin-left: 3px;
+    align-self: center;
+    input {
+      position: relative;
+      white-space: nowrap;
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      margin-right:8px;
+      outline: none;
+
+      border: 2px solid #b2b2b2;
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      &:checked:after {
+        content: url("../images/icons/popup-checkbox.png");
+        position: absolute;
+        top: 3px;
+        left: 3px;
+      }
+
+    }
+    label {
+      display: inline-block;
+      width: calc(~'100% - 100px');
+      font-family: "Roboto-Light", sans-serif;
+      font-size: 15px;
+      color: #3f3f3f;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__btn-submit {
+    padding: 21px 44px;
+    border: none;
+    border-radius: 27px;
+    font-size: 16px;
+    background-color: #ed1c2b;
+    font-family: "Geometria-Medium", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    outline: none;
+    align-self: center;
+  }
+
+  .error {
+    border-color: #E52A33!important;
+  }
+  .valid {
+    border-color: #46B004!important;
+  }
+
+  label.error {
+    display: none!important;
+  }
+
+}

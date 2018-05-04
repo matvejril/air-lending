@@ -12,6 +12,7 @@
 
     <script type="text/javascript" src="plugins/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="plugins/slick/slick.js"></script>
+    <script type="text/javascript" src="plugins/jquery.validate.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
@@ -52,7 +53,7 @@
                     </p>
                 </div>
                 <div class="banner__actions">
-                    <button class="banner__get-offers">Получить предложение</button>
+                    <button class="banner__get-offers js_main-modal">Получить предложение</button>
                     <button class="banner__download-brief">Скачать бриф</button>
                 </div>
             </div>
@@ -216,7 +217,7 @@
                             </div>
                             <div class="projects-gallery-main__actions">
                                 <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                                <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
                             </div>
                         </div>
                     </div>
@@ -240,32 +241,7 @@
                             </div>
                             <div class="projects-gallery-main__actions">
                                 <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projects-gallery-main__item">
-                        <div class="projects-gallery-main__view">
-                            <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
-                        </div>
-                        <div class="projects-gallery-main__description">
-                            <h4 class="projects-gallery-main__title">
-                                FloraOpt — цветочная продукция
-                                в розницу по оптовым ценам
-                            </h4>
-                            <div class="projects-gallery-main__content">
-                                <p>
-                                    Наша компания на рынке с 2012 года. За это время мы открыли более
-                                    20 магазинов в трех городах России. Предлагая огромный ассортимент
-                                    и высокое качество свежих цветов своим клиентам, мы заняли
-                                    лидирующую позицию на рынке города Новосибирска. Сейчас мы
-                                    крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
-                                </p>
-                            </div>
-                            <div class="projects-gallery-main__actions">
-                                <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                                <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
                             </div>
                         </div>
                     </div>
@@ -290,7 +266,7 @@
                             </div>
                             <div class="projects-gallery-main__actions">
                                 <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                                <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
                             </div>
                         </div>
                     </div>
@@ -315,7 +291,7 @@
                             </div>
                             <div class="projects-gallery-main__actions">
                                 <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                                <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
                             </div>
                         </div>
                     </div>
@@ -340,7 +316,32 @@
                             </div>
                             <div class="projects-gallery-main__actions">
                                 <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                                <button class="projects-gallery-main__get-this-case">Хочу такой же сайт</button>
+                                <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-gallery-main__item">
+                        <div class="projects-gallery-main__view">
+                            <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                        </div>
+                        <div class="projects-gallery-main__description">
+                            <h4 class="projects-gallery-main__title">
+                                FloraOpt — цветочная продукция
+                                в розницу по оптовым ценам
+                            </h4>
+                            <div class="projects-gallery-main__content">
+                                <p>
+                                    Наша компания на рынке с 2012 года. За это время мы открыли более
+                                    20 магазинов в трех городах России. Предлагая огромный ассортимент
+                                    и высокое качество свежих цветов своим клиентам, мы заняли
+                                    лидирующую позицию на рынке города Новосибирска. Сейчас мы
+                                    крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
+                                </p>
+                            </div>
+                            <div class="projects-gallery-main__actions">
+                                <button class="projects-gallery-main__detail-case">Подробный кейс</button>
+                                <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
                             </div>
                         </div>
                     </div>
@@ -398,7 +399,7 @@
                                     <button class="algorithm-tabs-main__download-brief">
                                         Скачать бриф
                                     </button>
-                                    <button class="algorithm-tabs-main__get-started">
+                                    <button class="algorithm-tabs-main__get-started js_main-modal">
                                         Начать работу
                                     </button>
                                 </div>
@@ -424,7 +425,7 @@
                                     <button class="algorithm-tabs-main__download-brief">
                                         Скачать бриф
                                     </button>
-                                    <button class="algorithm-tabs-main__get-started">
+                                    <button class="algorithm-tabs-main__get-started js_main-modal">
                                         Начать работу
                                     </button>
                                 </div>
@@ -450,7 +451,7 @@
                                     <button class="algorithm-tabs-main__download-brief">
                                         Скачать бриф
                                     </button>
-                                    <button class="algorithm-tabs-main__get-started">
+                                    <button class="algorithm-tabs-main__get-started js_main-modal">
                                         Начать работу
                                     </button>
                                 </div>
@@ -476,7 +477,7 @@
                                     <button class="algorithm-tabs-main__download-brief">
                                         Скачать бриф
                                     </button>
-                                    <button class="algorithm-tabs-main__get-started">
+                                    <button class="algorithm-tabs-main__get-started js_main-modal">
                                         Начать работу
                                     </button>
                                 </div>
@@ -502,7 +503,7 @@
                                     <button class="algorithm-tabs-main__download-brief">
                                         Скачать бриф
                                     </button>
-                                    <button class="algorithm-tabs-main__get-started">
+                                    <button class="algorithm-tabs-main__get-started js_main-modal">
                                         Начать работу
                                     </button>
                                 </div>
@@ -596,7 +597,7 @@
                     </div>
                 </div>
             </div>
-            <button class="services__order-btn">Заказать услуги</button>
+            <button class="services__order-btn js_main-modal">Заказать услуги</button>
         </div>
     </section>
 
@@ -605,9 +606,9 @@
         <div class="container">
             <h2 class="new-project__title">Начать проект</h2>
             <form class="new-project-form">
-                <input class="new-project-form__input" type="text" name="user-name" placeholder="Представтесь, пожалуйста">
-                <input class="new-project-form__input" type="text" name="user-mail" placeholder="Введите email">
-                <textarea class="new-project-form__textarea" rows="5" type="text" name="user-mail" placeholder="Расскажите немного о вашем проекте"></textarea>
+                <input class="new-project-form__input" type="text" name="name" placeholder="Представтесь, пожалуйста">
+                <input class="new-project-form__input" type="text" name="email" placeholder="Введите email">
+                <textarea class="new-project-form__textarea" rows="5" type="text" name="projects" placeholder="Расскажите немного о вашем проекте"></textarea>
                 <div class="new-project-form__actions">
                     <button class="new-project-form__affix">Прикрепить файл</button>
                     <button type="submit" class="new-project-form__submit">Отправить</button>
@@ -640,5 +641,34 @@
         </div>
     </div>
 </footer>
+
+
+<div class="popup">
+    <div class="popup__window">
+        <div class="popup__head">
+            <button class="popup__btn-close"></button>
+        </div>
+        <div class="popup__main">
+            <h2 class="popup__title">Оставьте заявку</h2>
+            <form class="popup__form" action="#" method="post">
+                <div class="horizontal-group">
+                    <input class="popup__name" type="text" placeholder="Имя *" name="name">
+                    <input class="popup__phone" type="text" placeholder="Телефон *" name="phone">
+                </div>
+                <textarea class="popup__textarea" rows="5" type="text" name="projects" placeholder="Расскажите о вашем проекте"></textarea>
+
+                <div class="popup__actions">
+                    <div class="popup__compliance">
+                        <input id="popup-compliance" type="checkbox" name="popup-compliance">
+                        <label for="popup-compliance">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button class="popup__btn-submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
