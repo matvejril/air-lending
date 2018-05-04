@@ -3023,64 +3023,46 @@ template {
   clip: auto;
 }
 @font-face {
-  font-family: "Roboto-Regular";
-  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
-  font-style: normal;
+  font-family: 'Roboto-Regular';
+  src: url(../fonts/Roboto-Regular.eot), url(../fonts/Roboto-Regular.woff2) format('woff2'), url(../fonts/Roboto-Regular.woff) format('woff'), url(../fonts/Roboto-Regular.ttf) format('truetype');
   font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Roboto-Light";
-  src: url(../fonts/Roboto-Light.ttf) format("truetype");
-  font-style: normal;
+  font-family: 'Roboto-Light';
+  src: url(../fonts/Roboto-Light.eot), url(../fonts/Roboto-Light.woff2) format('woff2'), url(../fonts/Roboto-Light.woff) format('woff'), url(../fonts/Roboto-Light.ttf) format('truetype');
   font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Geometria";
-  src: url(../fonts/Geometria.otf) format("truetype");
-  font-style: normal;
+  font-family: 'Geometria';
+  src: url(../fonts/Geometria.eot), url(../fonts/Geometria.woff2) format('woff2'), url(../fonts/Geometria.woff) format('woff'), url(../fonts/Geometria.ttf) format('truetype');
   font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Geometria-Medium";
-  src: url(../fonts/Geometria-Medium.otf) format("truetype");
-  font-style: normal;
+  font-family: 'Geometria-Medium';
+  src: url(../fonts/Geometria-Medium.eot), url(../fonts/Geometria-Medium.woff2) format('woff2'), url(../fonts/Geometria-Medium.woff) format('woff'), url(../fonts/Geometria-Medium.ttf) format('truetype');
   font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Geometria-ExtaBold";
-  src: url(../fonts/Geometria-ExtaBlack.otf) format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Roboto-Medium";
-  src: url(../fonts/Roboto-Medium.ttf) format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Geometria-Bold";
+  font-family: 'Geometria-Bold';
   src: url(../fonts/Geometria-Bold.otf) format("truetype");
-  font-style: normal;
   font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "alsRubl";
-  src: url(../fonts/als-rubl.otf) format("truetype");
-  font-style: normal;
+  font-family: 'Geometria-ExtaBold';
+  src: url(../fonts/Geometria-ExtaBlack.eot), url(../fonts/Geometria-ExtaBlack.woff) format('woff'), url(../fonts/Geometria-ExtaBlack.ttf) format('truetype');
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'alsRubl';
+  src: url(../fonts/alsRubl.eot), url(../fonts/alsRubl.woff2) format('woff2'), url(../fonts/alsRubl.woff) format('woff'), url(../fonts/alsRubl.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 .container {
   max-width: 1400px;
@@ -3642,6 +3624,7 @@ template {
   font-family: "Geometria", sans-serif;
   color: #ffffff;
   font-size: 36px;
+  font-weight: normal;
   margin: 0 0 18px 0;
 }
 .site-price__content {
@@ -3697,8 +3680,9 @@ template {
 .services-item__title {
   margin: 0 0 18px 0;
   font-family: "Roboto-Regular", sans-serif;
-  font-size: 25px;
+  font-size: 24px;
   color: #000000;
+  font-weight: normal;
 }
 .services-item__content {
   font-family: "Roboto-Light", sans-serif;
@@ -3822,17 +3806,6 @@ template {
   display: flex;
   justify-content: space-between;
 }
-.new-project-form__affix {
-  font-family: "Geometria-Bold", sans-serif;
-  text-transform: uppercase;
-  padding: 10px 10px 10px 49px;
-  box-sizing: border-box;
-  color: #00a1e4;
-  background: url(../images/icons/affix.png) no-repeat 5px 0 transparent;
-  border: none;
-  outline: none;
-  align-self: center;
-}
 .new-project-form__submit {
   margin: 0;
   padding: 21px 43px;
@@ -3869,13 +3842,48 @@ template {
   font-family: "Roboto-Regular", sans-serif;
 }
 .contact-us__phone {
-  margin-right: 5px;
-  font-size: 25px;
+  margin-right: 10px;
+  font-size: 24px;
   color: #000000;
 }
 .contact-us__mail {
   color: #00a1e4;
   font-size: 25px;
+}
+.file-upload-wrap {
+  align-self: center;
+}
+.file-upload {
+  padding: 8px 0;
+}
+.file-upload__hidden {
+  display: none;
+}
+.file-upload__btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.file-upload__text {
+  font-family: "Geometria-Bold", sans-serif;
+  text-transform: uppercase;
+  padding: 10px 10px 10px 49px;
+  box-sizing: border-box;
+  color: #00a1e4;
+  background: url(../images/icons/affix.png) no-repeat 7px 3px transparent;
+  border: none;
+  outline: none;
+  align-self: center;
+}
+.file-upload__file-name {
+  position: absolute;
+  margin-left: 7px;
+  background: transparent;
+  border: none;
+}
+.file-upload__file-name:hover {
+  cursor: default;
 }
 .footer {
   padding: 37px 0 28px 0;
