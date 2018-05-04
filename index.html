@@ -13,10 +13,14 @@
     <script type="text/javascript" src="plugins/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="plugins/slick/slick.js"></script>
     <script type="text/javascript" src="plugins/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="plugins/wow-js/wow.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" type="text/css" href="plugins/animate-css/animate.css"/>
+
     <link href="css/index.css" rel="stylesheet">
 
     <!--<script type="text/javascript" src="plugins/jquery.js"></script>-->
@@ -63,10 +67,10 @@
 
     <section class="advantages">
         <div class="container">
-            <h2 class="advantages__title">Причины обратиться к нам</h2>
-            <p class="advantages__sub-title">Преимущества наших<br> интернет-магазинов</p>
+            <h2 class="advantages__title wow fadeInLeftBig">Причины обратиться к нам</h2>
+            <p class="advantages__sub-title wow fadeInLeftBig" data-wow-delay="0.6">Преимущества наших<br> интернет-магазинов</p>
             <ul class="advantages__list">
-                <li class="advantages-item">
+                <li class="advantages-item wow zoomInLeft">
                     <div class="advantages-item__img">
                         <img src="images/advantages/usability.png" alt="usability img">
                     </div>
@@ -74,7 +78,7 @@
                         Удобный <br>интерфейс
                     </p>
                 </li>
-                <li class="advantages-item">
+                <li class="advantages-item wow zoomInLeft" data-wow-delay="0.2s" data-wow-duration="0.5">
                     <div class="advantages-item__img">
                         <img src="images/advantages/speed.png" alt="speed img">
                     </div>
@@ -82,7 +86,7 @@
                         Высокая скорость загрузки
                     </p>
                 </li>
-                <li class="advantages-item">
+                <li class="advantages-item wow zoomInRight" data-wow-delay="0.4s" data-wow-duration="0.5">
                     <div class="advantages-item__img">
                         <img src="images/advantages/functional.png" alt="functional img">
                     </div>
@@ -90,7 +94,7 @@
                         Богатый функционал
                     </p>
                 </li>
-                <li class="advantages-item">
+                <li class="advantages-item wow zoomInLeft">
                     <div class="advantages-item__img">
                         <img src="images/advantages/payment-delivery.png" alt="payment-delivery img">
                     </div>
@@ -98,7 +102,7 @@
                         Системы оплаты <br>и доставки
                     </p>
                 </li>
-                <li class="advantages-item">
+                <li class="advantages-item wow zoomInLeft" data-wow-delay="0.6s" data-wow-duration="0.5">
                     <div class="advantages-item__img">
                         <img src="images/advantages/1с-integration.png" alt="1с-integration img">
                     </div>
@@ -106,7 +110,7 @@
                         Интеграция с СRM, 1С, телефонией
                     </p>
                 </li>
-                <li class="advantages-item">
+                <li class="advantages-item wow zoomInRight" data-wow-delay="0.8s" data-wow-duration="0.5">
                     <div class="advantages-item__img">
                         <img src="images/advantages/mobile-version.png" alt="mobile-version img">
                     </div>
@@ -123,19 +127,19 @@
         <div class="container">
             <h4 class="cms__title">Платформы, с которыми мы работаем</h4>
             <ul class="cms__list">
-                <li class="cms-item">
+                <li class="cms-item wow fadeInLeft" data-wow-delay="0.4s">
                     <img src="images/cms/bitrix.png" alt="bitrix img">
                 </li>
-                <li class="cms-item">
+                <li class="cms-item wow fadeInLeft" data-wow-delay="0.2s">
                     <img src="images/cms/modex.png" alt="modex img">
                 </li>
-                <li class="cms-item">
+                <li class="cms-item wow fadeInLeft">
                     <img src="images/cms/other.png" alt="other img">
                 </li>
-                <li class="cms-item">
+                <li class="cms-item wow fadeInRight" data-wow-delay="0.2s">
                     <img src="images/cms/wordpress.png" alt="wordpress img">
                 </li>
-                <li class="cms-item">
+                <li class="cms-item wow fadeInRight" data-wow-delay="0.4s">
                     <img src="images/cms/opencart.png" alt="opencart img">
                 </li>
             </ul>
@@ -155,7 +159,7 @@
                         <h5 class="progress-item__value">15</h5>
                         <p class="progress-item__description">готовых<br> интернет-магазинов</p>
                     </div>
-                    <div class="progress-item progress-item_center">
+                    <div class="progress-item progress-item_center wow tada" data-wow-iteration="2">
                         <p class="progress-item__description">Наши достижения<br> и принципы работы</p>
                     </div>
                     <div class="progress-item">
@@ -173,7 +177,7 @@
 
 
     <section class="projects">
-        <h2 class="projects__title">Наши работы</h2>
+        <h2 class="projects__title wow bounceInLeft">Наши работы</h2>
         <div class="projects-gallery">
             <div class="projects-gallery-nav">
                 <div class="projects-gallery-nav__item">
@@ -352,7 +356,7 @@
 
 
     <section class="algorithm">
-        <h2 class="algorithm__title">
+        <h2 class="algorithm__title wow bounceInLeft">
             Алгоритм реализации
         </h2>
         <div class="algorithm-tabs">
@@ -519,11 +523,11 @@
     <section class="site-price">
         <div class="container">
             <div class="site-price__wrap">
-                <div class="site-price__view">
+                <div class="site-price__view wow fadeInLeft" data-wow-offset="400">
                     <img src="images/site-price/diagram.png" alt="diagram img">
-                    <p>>200 000 &#8381;</p>
+                    <p class="site-price__value"><span class="site-price__sign">></span><span class="site-price__num">200 000</span><span class="site-price__currency">c</span></p>
                 </div>
-                <div class="site-price__description">
+                <div class="site-price__description wow fadeInRight" data-wow-offset="100">
                     <h4 class="site-price__title">
                         Сколько стоит сайт?
                     </h4>
@@ -541,9 +545,9 @@
 
     <section class="services">
         <div class="container">
-            <h4 class="services__title">Дополнительные услуги</h4>
+            <h4 class="services__title wow bounceInLeft">Дополнительные услуги</h4>
             <div class="services__list">
-                <div class="services-item">
+                <div class="services-item wow bounceInLeft" data-wow-delay="0.2">
                     <div class="services-item__view">
                         <img src="images/services/technical-support.png" alt="technical-support">
                     </div>
@@ -557,7 +561,7 @@
                         алгоритмы.
                     </div>
                 </div>
-                <div class="services-item">
+                <div class="services-item wow bounceInLeft">
                     <div class="services-item__view">
                         <img src="images/services/redesign.png" alt="redesign">
                     </div>
@@ -569,7 +573,7 @@
                         Главное направление развития бизнеса.
                     </div>
                 </div>
-                <div class="services-item">
+                <div class="services-item wow bounceInRight">
                     <div class="services-item__view">
                         <img src="images/services/seo.png" alt="seo">
                     </div>
@@ -582,7 +586,7 @@
                         бизнеса.
                     </div>
                 </div>
-                <div class="services-item">
+                <div class="services-item wow bounceInRight" data-wow-delay="0.2">
                     <div class="services-item__view">
                         <img src="images/services/context.png" alt="advertising">
                     </div>
@@ -604,18 +608,18 @@
 
     <section class="new-project">
         <div class="container">
-            <h2 class="new-project__title">Начать проект</h2>
+            <h2 class="new-project__title wow fadeInLeftBig">Начать проект</h2>
             <form class="new-project-form">
-                <input class="new-project-form__input" type="text" name="name" placeholder="Представтесь, пожалуйста">
-                <input class="new-project-form__input" type="text" name="email" placeholder="Введите email">
-                <textarea class="new-project-form__textarea" rows="5" type="text" name="projects" placeholder="Расскажите немного о вашем проекте"></textarea>
-                <div class="new-project-form__actions">
+                <input class="new-project-form__input wow fadeInLeftBig" type="text" name="name" placeholder="Представтесь, пожалуйста">
+                <input class="new-project-form__input wow fadeInLeftBig" data-wow-delay="0.2" type="text" name="email" placeholder="Введите email">
+                <textarea class="new-project-form__textarea wow fadeInLeftBig" data-wow-delay="0.4" rows="5" type="text" name="projects" placeholder="Расскажите немного о вашем проекте"></textarea>
+                <div class="new-project-form__actions wow fadeInLeftBig" data-wow-delay="0.6">
                     <button class="new-project-form__affix">Прикрепить файл</button>
                     <button type="submit" class="new-project-form__submit">Отправить</button>
                 </div>
             </form>
 
-            <div class="contact-us">
+            <div class="contact-us wow fadeInLeftBig" data-wow-delay="0.8">
                 <h3 class="contact-us__title">Или свяжитесь с нами:</h3>
                 <div class="contact-us__content">
                     <a class="contact-us__phone" href="tel:+7(383)383 0717">+7 (383) 383-07-17</a>

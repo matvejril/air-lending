@@ -3619,12 +3619,24 @@ template {
   text-align: right;
   width: 30%;
 }
-.site-price__view p {
-  margin: 18px 0 0 0;
-  font-family: "Geometria-Bold", sans-serif;
-  font-size: 59px;
-  white-space: nowrap;
+.site-price__value {
+  margin: 12px 0 0 0;
   color: #ffffff;
+  white-space: nowrap;
+}
+.site-price__sign {
+  margin-right: 10px;
+  font-family: "Geometria", sans-serif;
+  font-size: 59px;
+}
+.site-price__num {
+  margin-right: 5px;
+  font-size: 59px;
+  font-family: "Geometria-Bold", sans-serif;
+}
+.site-price__currency {
+  font-family: "alsRubl", sans-serif;
+  font-size: 59px;
 }
 .site-price__title {
   font-family: "Geometria", sans-serif;
