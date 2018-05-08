@@ -22,8 +22,7 @@
         display: inline-block;
         margin-right: 10px;
         vertical-align: middle;
-        filter: brightness(0.1);
-        opacity: 0.17;
+        opacity: 0;
       }
     }
     &:last-child {
@@ -62,6 +61,19 @@
       width: 320px!important;
     }
   }
+  &__item_visited {
+    p {
+      &:before {
+        filter: brightness(0.1);
+        opacity: 0.17;
+      }
+    }
+  }
+  //&+ .algorithm-tabs-nav__item {
+  //  p {
+  //    color: #00a1e4;
+  //  }
+  //}
 
   .is-active {
     background-color: #ffffff;
@@ -70,12 +82,6 @@
       &:before {
         filter: brightness(1);
         opacity: 1;
-      }
-    }
-
-    &+ .algorithm-tabs-nav__item {
-      p {
-        color: #00a1e4;
       }
     }
   }

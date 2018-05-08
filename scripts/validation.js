@@ -20,8 +20,8 @@
             },
             phone: {
                 required: true,
-                minlength: 4,
-                digits: true
+                minlength: 5
+                // digits: true
             }
         }
     });
