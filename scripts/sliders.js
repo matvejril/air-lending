@@ -35,8 +35,29 @@
             // var currrentNavSlideElem = '.projects-gallery-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
             // $('.projects-gallery-nav .is-active').removeClass('is-active');
             // $(currrentNavSlideElem).addClass('is-active');
+
         });
 
+        jobsSliderMain.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+            // $('.projects-gallery-main__item').removeClass('slick-go');
+            // $('.projects-gallery-main__item').eq(nextSlide).addClass("slick-go");
+
+            var el = $('.projects-gallery-main__item').eq(nextSlide).find('.animated');
+            el.toggle().toggle();
+            console.log(el)
+            // el.find("animated").css({"animation": "none", "animation", "nul"});
+
+            // reset_animation();
+
+        });
+
+
+        // function reset_animation() {
+        //     var el = document.getElementById('animated');
+        //     el.style.animation = 'none';
+        //     el.offsetHeight; /* trigger reflow */
+        //     el.style.animation = null;
+        // }
 
         jobsSliderSecond.on('click', '.slick-slide', function (event) {
             event.preventDefault();
@@ -45,6 +66,7 @@
 
             $('.projects-gallery-nav .is-active').removeClass('is-active');
             $(this).addClass('is-active');
+
         });
     }
 
@@ -88,6 +110,7 @@
             // var currentNavSlideElem = '.algorithm-tabs-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
             // $('.algorithm-tabs-nav .is-active').removeClass('is-active');
             // $(currentNavSlideElem).addClass('is-active');
+
         });
 
         algorithmSliderMain.on("beforeChange", function(event, slick, currentSlide) {

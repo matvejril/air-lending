@@ -3444,24 +3444,6 @@ template {
   text-transform: uppercase;
   outline: none;
 }
-.projects-gallery-main .fadeInLeft {
-  opacity: 0;
-  -webkit-transform: translateX(-400px);
-  -ms-transform: translateX(-400px);
-  transform: translateX(-400px);
-  transition-property: opacity, -webkit-transform;
-  transition-property: opacity,transform;
-  transition-property: opacity, transform, -webkit-transform;
-}
-.projects-gallery-main .delay-300 {
-  transition-delay: .3s;
-}
-.projects-gallery-main .fadeInLeft {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-}
 .algorithm {
   padding: 125px 0 0 0;
   background-color: #f6f6f6;
