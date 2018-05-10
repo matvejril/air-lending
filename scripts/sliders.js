@@ -1,7 +1,6 @@
 (function() {
 
     // Слайдер с нашими работами
-
     var jobsSliderMain = $('.projects-gallery-main__list');
     var jobsSliderSecond = $('.projects-gallery-nav');
     if (jobsSliderMain) {
@@ -13,14 +12,13 @@
             dots: false,
             infinite: true,
             useTransform: true,
-            speed: 200,
+            draggable: false,
+            speed: 200
             // cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-
-            cssEase: 'linear'
         });
 
         jobsSliderSecond
-            .on('init', function(event, slick) {
+            .on('init', function (event, slick) {
                 $('.projects-gallery-nav .slick-current').addClass('is-active');
             })
             .slick({
@@ -30,27 +28,27 @@
                 focusOnSelect: false,
                 infinite: true
             });
+
+        // Свойства и методы слайдера с алгоритмом реализации
+        jobsSliderMain.on('afterChange', function (event, slick, currentSlide) {
+            jobsSliderMain.slick('slickGoTo', currentSlide);
+            // var currrentNavSlideElem = '.projects-gallery-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+            // $('.projects-gallery-nav .is-active').removeClass('is-active');
+            // $(currrentNavSlideElem).addClass('is-active');
+        });
+
+
+        jobsSliderSecond.on('click', '.slick-slide', function (event) {
+            event.preventDefault();
+            var goToSingleSlide = $(this).data('slick-index');
+            jobsSliderMain.slick('slickGoTo', goToSingleSlide);
+
+            $('.projects-gallery-nav .is-active').removeClass('is-active');
+            $(this).addClass('is-active');
+        });
     }
 
-
-    jobsSliderMain.on('afterChange', function(event, slick, currentSlide) {
-        jobsSliderMain.slick('slickGoTo', currentSlide);
-        var currrentNavSlideElem = '.projects-gallery-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
-        $('.projects-gallery-nav .is-active').removeClass('is-active');
-        $(currrentNavSlideElem).addClass('is-active');
-    });
-
-    jobsSliderSecond.on('click', '.slick-slide', function(event) {
-        event.preventDefault();
-        var goToSingleSlide = $(this).data('slick-index');
-
-        jobsSliderMain.slick('slickGoTo', goToSingleSlide);
-    });
-
-
-
     // Слайдер с алгоритмом реализации
-
     var algorithmSliderSecond = $('.algorithm-tabs-nav');
     var algorithmSliderMain = $('.algorithm-tabs-main__list');
     if (algorithmSliderMain) {
@@ -62,8 +60,9 @@
             dots: false,
             infinite: false,
             useTransform: true,
-            speed: 200,
-            cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)'
+            draggable: false,
+            speed: 200
+            // cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)'
         });
 
         algorithmSliderSecond
@@ -78,57 +77,49 @@
                 infinite: false,
                 focusOnSelect: false
             });
-    }
 
+        // Свойства и методы слайдера с алгоритмом реализации
+        var algorithmTabsNavItemAll = document.querySelectorAll('.algorithm-tabs-nav__item');
+        var maxState = 0;
+        algorithmTabsNavItemAll[1].classList.add("algorithm-tabs-nav__item_next");
 
-    var algorithmTabsNavItemAll = document.querySelectorAll('.algorithm-tabs-nav__item');
+        algorithmSliderMain.on('afterChange', function(event, slick, currentSlide) {
+            algorithmSliderSecond.slick('slickGoTo', currentSlide);
+            // var currentNavSlideElem = '.algorithm-tabs-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+            // $('.algorithm-tabs-nav .is-active').removeClass('is-active');
+            // $(currentNavSlideElem).addClass('is-active');
+        });
 
-    algorithmSliderMain.on('afterChange', function(event, slick, currentSlide) {
-        algorithmSliderSecond.slick('slickGoTo', currentSlide);
-        var currrentNavSlideElem = '.algorithm-tabs-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
-        $('.algorithm-tabs-nav .is-active').removeClass('is-active');
-        $(currrentNavSlideElem).addClass('is-active');
-    });
-
-    algorithmSliderMain.on("beforeChange", function(event, slick, currentSlide) {
-        var algorithmTabsNavItem = algorithmTabsNavItemAll[currentSlide];
-
-        var algorithmTabsNavItemHasClass = algorithmTabsNavItem.classList.contains('algorithm-tabs-nav__item_visited');
-        if (!algorithmTabsNavItemHasClass) {
-            algorithmTabsNavItem.classList.add('algorithm-tabs-nav__item_visited')
-        }
-    });
-
-    var maxState = 0;
-    algorithmSliderSecond.on('click', '.slick-slide', function(event) {
-        event.preventDefault();
-
-        // Получаем позиции активного элемента и кликнутого
-        var activeElementState = $('.algorithm-tabs-nav').find('.is-active').index();
-        var goToElementState = $(this).data('slick-index');
-
-
-        console.log("activeElementState", activeElementState, "goToSingleSlide", goToElementState);
-
-        if (activeElementState + 1 >= goToElementState || maxState >= goToElementState) {
-            algorithmSliderMain.slick('slickGoTo', goToElementState);
-
-            if (maxState < goToElementState) {
-                maxState = goToElementState;
+        algorithmSliderMain.on("beforeChange", function(event, slick, currentSlide) {
+            var algorithmTabsNavItem = algorithmTabsNavItemAll[currentSlide];
+            var algorithmTabsNavItemHasClass = algorithmTabsNavItem.classList.contains('algorithm-tabs-nav__item_visited');
+            if (!algorithmTabsNavItemHasClass) {
+                algorithmTabsNavItem.classList.add('algorithm-tabs-nav__item_visited')
             }
+        });
 
-        }
+        algorithmSliderSecond.on('click', '.slick-slide', function(event) {
+            event.preventDefault();
+            // Получаем позиции активного элемента и кликнутого
+            // var activeElementState = $('.algorithm-tabs-nav').find('.is-active').index();
+            var goToElementState = $(this).data('slick-index');
 
+            // Ограничиваем возможность перехоа к элементу вправо +1 или обратно
+            if ( maxState + 1 >= goToElementState) {
+                algorithmSliderMain.slick('slickGoTo', goToElementState);
+                $('.algorithm-tabs-nav .is-active').removeClass('is-active');
+                $(this).addClass('is-active');
+                // Добавляем синее выжелении
+                if (maxState < goToElementState) {
+                    maxState = goToElementState;
+                    for (var e = 0; e < maxState + 1; e++) {
+                        algorithmTabsNavItemAll[e].classList.remove('algorithm-tabs-nav__item_next');
+                    }
+                    algorithmTabsNavItemAll[maxState + 1].classList.add('algorithm-tabs-nav__item_next');
+                }
+            }
+        });
 
-
-        console.log(goToSingleSlide);
-
-
-        // for (var e = 0; e < algorithmTabsNavItemAll.length; e++) {
-        //     if (elementIndex === algorithmTabsNavItemAll[e]) {
-        //
-        //     }
-        // }
-    });
+    }
 
 }());
