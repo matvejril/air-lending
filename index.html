@@ -10,24 +10,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="plugins/animate-css/animate.css"/>
-    <link rel="stylesheet" type="text/css" href="plugins/magnific-popup/magnific-popup.css"/>
-
     <link href="css/index.css" rel="stylesheet">
-
-    <!--<script type="text/javascript" src="plugins/jquery.js"></script>-->
-
-    <script type="text/javascript" src="plugins/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="plugins/slick/slick.js"></script>
-    <script type="text/javascript" src="plugins/jquery.validate.min.js"></script>
-    <!--<script type="text/javascript" src="plugins/wow-js/wow.min.js"></script>-->
-    <script type="text/javascript" src="plugins/maskedinput/jquery.maskedinput.js"></script>
-    <script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <script type="text/javascript" src="scripts/bundle.js"></script>
 
 </head>
 
@@ -67,12 +50,12 @@
     </section>
 
 
-    <section class="advantages">
+    <section class="advantages animatedParent animateOnce" data-sequence='300' data-appear-top-offset='-100'>
         <div class="container">
-            <h2 class="advantages__title wow fadeInLeftBig">Причины обратиться к нам</h2>
-            <p class="advantages__sub-title wow fadeInLeftBig" data-wow-offset="100">Преимущества наших<br> интернет-магазинов</p>
+            <h2 class="advantages__title animated fadeInLeft" data-id='1'>Причины обратиться к нам</h2>
+            <p class="advantages__sub-title animated fadeInLeft" data-id='2'>Преимущества наших<br> интернет-магазинов</p>
             <ul class="advantages__list">
-                <li class="advantages-item wow zoomInLeft">
+                <li class="advantages-item animated growIn" data-id='3'>
                     <div class="advantages-item__img">
                         <img src="images/advantages/usability.png" alt="usability img">
                     </div>
@@ -80,7 +63,7 @@
                         Удобный <br>интерфейс
                     </p>
                 </li>
-                <li class="advantages-item wow zoomInLeft" data-wow-delay="0.2s" data-wow-duration="0.5">
+                <li class="advantages-item animated growIn" data-id='4'>
                     <div class="advantages-item__img">
                         <img src="images/advantages/speed.png" alt="speed img">
                     </div>
@@ -88,7 +71,7 @@
                         Высокая скорость загрузки
                     </p>
                 </li>
-                <li class="advantages-item wow zoomInRight" data-wow-delay="0.4s" data-wow-duration="0.5">
+                <li class="advantages-item animated growIn" data-id='5'>
                     <div class="advantages-item__img">
                         <img src="images/advantages/functional.png" alt="functional img">
                     </div>
@@ -96,7 +79,7 @@
                         Богатый функционал
                     </p>
                 </li>
-                <li class="advantages-item wow zoomInLeft">
+                <li class="advantages-item animated growIn " data-id='6'>
                     <div class="advantages-item__img">
                         <img src="images/advantages/payment-delivery.png" alt="payment-delivery img">
                     </div>
@@ -104,7 +87,7 @@
                         Системы оплаты <br>и доставки
                     </p>
                 </li>
-                <li class="advantages-item wow zoomInLeft" data-wow-delay="0.4s" data-wow-duration="0.5">
+                <li class="advantages-item animated growIn " data-id='7'>
                     <div class="advantages-item__img">
                         <img src="images/advantages/1с-integration.png" alt="1с-integration img">
                     </div>
@@ -112,7 +95,7 @@
                         Интеграция с СRM, 1С, телефонией
                     </p>
                 </li>
-                <li class="advantages-item wow zoomInRight" data-wow-delay="0.6s" data-wow-duration="0.5">
+                <li class="advantages-item animated growIn " data-id='8'>
                     <div class="advantages-item__img">
                         <img src="images/advantages/mobile-version.png" alt="mobile-version img">
                     </div>
@@ -128,20 +111,20 @@
     <section class="cms">
         <div class="container">
             <h4 class="cms__title">Платформы, с которыми мы работаем</h4>
-            <ul class="cms__list">
-                <li class="cms-item wow fadeInLeft" data-wow-delay="0.4s">
+            <ul class="cms__list animatedParent animateOnce" data-sequence='200' data-appear-top-offset='-100'>
+                <li class="cms-item animated fadeInLeft" data-id='1'>
                     <img src="images/cms/bitrix.png" alt="bitrix img">
                 </li>
-                <li class="cms-item wow fadeInLeft" data-wow-delay="0.2s">
+                <li class="cms-item animated fadeInLeft" data-id='2'>
                     <img src="images/cms/modex.png" alt="modex img">
                 </li>
-                <li class="cms-item wow fadeInLeft">
+                <li class="cms-item animated fadeIn" data-id='3'>
                     <img src="images/cms/other.png" alt="other img">
                 </li>
-                <li class="cms-item wow fadeInRight" data-wow-delay="0.2s">
+                <li class="cms-item animated fadeInRight" data-id='4'>
                     <img src="images/cms/wordpress.png" alt="wordpress img">
                 </li>
-                <li class="cms-item wow fadeInRight" data-wow-delay="0.4s">
+                <li class="cms-item animated fadeInRight" data-id='5'>
                     <img src="images/cms/opencart.png" alt="opencart img">
                 </li>
             </ul>
@@ -152,23 +135,23 @@
     <section class="progress">
         <div class="container">
             <div class="progress__circle">
-                <div class="progress__content">
-                    <div class="progress-item wow bounceIn" data-wow-offset="200">
+                <div class="progress__content animatedParent animateOnce" data-sequence='200' data-appear-top-offset='-350'>
+                    <div class="progress-item animated growIn" data-id='1'>
                         <h5 class="progress-item__value">10</h5>
                         <p class="progress-item__description">лет на рынке<br> веб-разработки</p>
                     </div>
-                    <div class="progress-item wow bounceIn" data-wow-delay="0.2s" data-wow-offset="200">
+                    <div class="progress-item animated growIn" data-id='2'>
                         <h5 class="progress-item__value">15</h5>
                         <p class="progress-item__description">готовых<br> интернет-магазинов</p>
                     </div>
                     <div class="progress-item progress-item_center">
                         <p class="progress-item__description">Наши достижения<br> и принципы работы</p>
                     </div>
-                    <div class="progress-item wow bounceIn" data-wow-delay="0.4s">
+                    <div class="progress-item animated growIn" data-id='3'>
                         <h5 class="progress-item__value">78</h5>
                         <p class="progress-item__description">процентов клиентов<br> остаются с нами</p>
                     </div>
-                    <div class="progress-item wow bounceIn" data-wow-delay="0.6s">
+                    <div class="progress-item animated growIn" data-id='4'>
                         <h5 class="progress-item__value">5</h5>
                         <p class="progress-item__description">человек работают<br> над проектом</p>
                     </div>
@@ -177,9 +160,8 @@
         </div>
     </section>
 
-
     <section class="projects">
-        <h2 class="projects__title wow bounceInLeft">Наши работы</h2>
+        <h2 class="projects__title">Наши работы</h2>
         <div class="projects-gallery">
             <div class="projects-gallery-nav">
                 <div class="projects-gallery-nav__item">
@@ -201,20 +183,20 @@
                     <img src="images/projects/logos/yans.png" alt="yans img">
                 </div>
             </div>
-            <div class="projects-gallery-main">
+            <div class="projects-gallery-main animatedParent animateOnce"  data-appear-top-offset='-100'>
                 <div class="projects-gallery-main__list">
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
                             <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="wow fadeInLeft fadeIneft delay-1000" data-wow-duration="1s" src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                                <img class="animated fadeInLeft" src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
-                            <h4 class="projects-gallery-main__title">
+                            <h4 class="projects-gallery-main__title animated fadeInDown">
                                 FloraOpt — цветочная продукция
                                 в розницу по оптовым ценам
                             </h4>
-                            <div class="projects-gallery-main__content">
+                            <div class="projects-gallery-main__content animated fadeInRight">
                                 <p>
                                     Наша компания на рынке с 2012 года. За это время мы открыли более
                                     20 магазинов в трех городах России. Предлагая огромный ассортимент
@@ -223,7 +205,7 @@
                                     крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
                                 </p>
                             </div>
-                            <div class="projects-gallery-main__actions">
+                            <div class="projects-gallery-main__actions animated fadeInUp">
                                 <button class="projects-gallery-main__detail-case">Подробный кейс</button>
                                 <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
                             </div>
@@ -232,15 +214,15 @@
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
                             <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="wow fadeIneft delay-1000" src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                                <img class="animated fadeInLeft" src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
-                            <h4 class="projects-gallery-main__title">
+                            <h4 class="projects-gallery-main__title animated fadeInDown ">
                                 FloraOpt — цветочная продукция
                                 в розницу по оптовым ценам
                             </h4>
-                            <div class="projects-gallery-main__content">
+                            <div class="projects-gallery-main__content animated fadeInRight ">
                                 <p>
                                     Наша компания на рынке с 2012 года. За это время мы открыли более
                                     20 магазинов в трех городах России. Предлагая огромный ассортимент
@@ -249,34 +231,7 @@
                                     крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
                                 </p>
                             </div>
-                            <div class="projects-gallery-main__actions">
-                                <button class="projects-gallery-main__detail-case">Подробный кейс</button>
-                                <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projects-gallery-main__item">
-                        <div class="projects-gallery-main__view">
-                            <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="wow fadeIneft delay-1000" src="images/projects/contents/floraOpt.png" alt="floraOpt img">
-                            </a>
-                        </div>
-                        <div class="projects-gallery-main__description">
-                            <h4 class="projects-gallery-main__title">
-                                FloraOpt — цветочная продукция
-                                в розницу по оптовым ценам
-                            </h4>
-                            <div class="projects-gallery-main__content">
-                                <p>
-                                    Наша компания на рынке с 2012 года. За это время мы открыли более
-                                    20 магазинов в трех городах России. Предлагая огромный ассортимент
-                                    и высокое качество свежих цветов своим клиентам, мы заняли
-                                    лидирующую позицию на рынке города Новосибирска. Сейчас мы
-                                    крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
-                                </p>
-                            </div>
-                            <div class="projects-gallery-main__actions">
+                            <div class="projects-gallery-main__actions animated fadeInUp ">
                                 <button class="projects-gallery-main__detail-case">Подробный кейс</button>
                                 <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
                             </div>
@@ -286,15 +241,15 @@
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
                             <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="wow fadeIneft delay-1000" src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                                <img class="animated fadeInLeft " src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
-                            <h4 class="projects-gallery-main__title">
+                            <h4 class="projects-gallery-main__title animated fadeInDown ">
                                 FloraOpt — цветочная продукция
                                 в розницу по оптовым ценам
                             </h4>
-                            <div class="projects-gallery-main__content">
+                            <div class="projects-gallery-main__content animated fadeInRight ">
                                 <p>
                                     Наша компания на рынке с 2012 года. За это время мы открыли более
                                     20 магазинов в трех городах России. Предлагая огромный ассортимент
@@ -303,7 +258,7 @@
                                     крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
                                 </p>
                             </div>
-                            <div class="projects-gallery-main__actions">
+                            <div class="projects-gallery-main__actions animated fadeInUp ">
                                 <button class="projects-gallery-main__detail-case">Подробный кейс</button>
                                 <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
                             </div>
@@ -313,15 +268,15 @@
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
                             <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="wow fadeIneft delay-1000" src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                                <img class="animated fadeInLeft " src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
-                            <h4 class="projects-gallery-main__title">
+                            <h4 class="projects-gallery-main__title animated fadeInDown ">
                                 FloraOpt — цветочная продукция
                                 в розницу по оптовым ценам
                             </h4>
-                            <div class="projects-gallery-main__content">
+                            <div class="projects-gallery-main__content animated fadeInRight ">
                                 <p>
                                     Наша компания на рынке с 2012 года. За это время мы открыли более
                                     20 магазинов в трех городах России. Предлагая огромный ассортимент
@@ -330,7 +285,7 @@
                                     крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
                                 </p>
                             </div>
-                            <div class="projects-gallery-main__actions">
+                            <div class="projects-gallery-main__actions animated fadeInUp ">
                                 <button class="projects-gallery-main__detail-case">Подробный кейс</button>
                                 <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
                             </div>
@@ -340,15 +295,15 @@
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
                             <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="wow fadeIneft delay-1000" src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                                <img class="animated fadeInLeft " src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
-                            <h4 class="projects-gallery-main__title">
+                            <h4 class="projects-gallery-main__title animated fadeInDown ">
                                 FloraOpt — цветочная продукция
                                 в розницу по оптовым ценам
                             </h4>
-                            <div class="projects-gallery-main__content">
+                            <div class="projects-gallery-main__content animated fadeInRight ">
                                 <p>
                                     Наша компания на рынке с 2012 года. За это время мы открыли более
                                     20 магазинов в трех городах России. Предлагая огромный ассортимент
@@ -357,7 +312,34 @@
                                     крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
                                 </p>
                             </div>
-                            <div class="projects-gallery-main__actions">
+                            <div class="projects-gallery-main__actions animated fadeInUp ">
+                                <button class="projects-gallery-main__detail-case">Подробный кейс</button>
+                                <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-gallery-main__item">
+                        <div class="projects-gallery-main__view">
+                            <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
+                                <img class="animated fadeInLeft " src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                            </a>
+                        </div>
+                        <div class="projects-gallery-main__description">
+                            <h4 class="projects-gallery-main__title animated fadeInDown ">
+                                FloraOpt — цветочная продукция
+                                в розницу по оптовым ценам
+                            </h4>
+                            <div class="projects-gallery-main__content animated fadeInRight ">
+                                <p>
+                                    Наша компания на рынке с 2012 года. За это время мы открыли более
+                                    20 магазинов в трех городах России. Предлагая огромный ассортимент
+                                    и высокое качество свежих цветов своим клиентам, мы заняли
+                                    лидирующую позицию на рынке города Новосибирска. Сейчас мы
+                                    крупнейшая оптово-розничная сеть цветочных салонов за Уралом.
+                                </p>
+                            </div>
+                            <div class="projects-gallery-main__actions animated fadeInUp ">
                                 <button class="projects-gallery-main__detail-case">Подробный кейс</button>
                                 <button class="projects-gallery-main__get-this-case js_main-modal">Хочу такой же сайт</button>
                             </div>
@@ -370,7 +352,7 @@
 
 
     <section class="algorithm">
-        <h2 class="algorithm__title wow bounceInLeft">
+        <h2 class="algorithm__title">
             Алгоритм реализации
         </h2>
         <div class="algorithm-tabs">
@@ -394,44 +376,19 @@
                 </div>
             </div>
 
-            <div class="algorithm-tabs-main">
+            <div class="algorithm-tabs-main animatedParent animateOnce" data-appear-top-offset='-100'>
                 <div class="container">
                     <div class="algorithm-tabs-main__list">
+
                         <div class="algorithm-tabs-main__item">
                             <div class="algorithm-tabs-main__item-wrap">
                                 <div class="algorithm-tabs-main__main">
                                     <div class="algorithm-tabs-main__view">
-                                        <img class="wow fadeInLeft" src="images/algorithm/brief-logo.png" alt="brief-logo">
-                                    </div>
-                                    <div class="algorithm-tabs-main__description wow fadeInRight">
-                                        <h4 class="algorithm-tabs-main__title">Брифинг</h4>
-                                        <div class="algorithm-tabs-main__content">
-                                            <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
-                                                мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
-                                                ваш будущий проект и выбрать подходящий путь решения поставленных задач.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="algorithm-tabs-main__actions wow fadeInUp">
-                                    <button class="algorithm-tabs-main__download-brief">
-                                        Скачать бриф
-                                    </button>
-                                    <button class="algorithm-tabs-main__get-started js_main-modal">
-                                        Начать работу
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="algorithm-tabs-main__item">
-                            <div class="algorithm-tabs-main__item-wrap">
-                                <div class="algorithm-tabs-main__main">
-                                    <div class="algorithm-tabs-main__view">
-                                        <img src="images/algorithm/brief-logo.png" alt="brief-logo">
+                                        <img class="animated fadeInLeft" src="images/algorithm/brief-logo.png" alt="brief-logo">
                                     </div>
                                     <div class="algorithm-tabs-main__description">
-                                        <h4 class="algorithm-tabs-main__title">Проектирывание</h4>
-                                        <div class="algorithm-tabs-main__content">
+                                        <h4 class="algorithm-tabs-main__title animated fadeInDown ">Брифинг</h4>
+                                        <div class="algorithm-tabs-main__content animated fadeInRight ">
                                             <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
                                                 мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
                                                 ваш будущий проект и выбрать подходящий путь решения поставленных задач.
@@ -439,7 +396,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="algorithm-tabs-main__actions">
+                                <div class="algorithm-tabs-main__actions animated fadeInUp ">
                                     <button class="algorithm-tabs-main__download-brief">
                                         Скачать бриф
                                     </button>
@@ -449,15 +406,16 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="algorithm-tabs-main__item">
                             <div class="algorithm-tabs-main__item-wrap">
                                 <div class="algorithm-tabs-main__main">
                                     <div class="algorithm-tabs-main__view">
-                                        <img src="images/algorithm/brief-logo.png" alt="brief-logo">
+                                        <img class="animated fadeInLeft" src="images/algorithm/brief-logo.png" alt="brief-logo">
                                     </div>
                                     <div class="algorithm-tabs-main__description">
-                                        <h4 class="algorithm-tabs-main__title">Дизайн</h4>
-                                        <div class="algorithm-tabs-main__content">
+                                        <h4 class="algorithm-tabs-main__title animated fadeInDown ">Проектирывание</h4>
+                                        <div class="algorithm-tabs-main__content animated fadeInRight ">
                                             <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
                                                 мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
                                                 ваш будущий проект и выбрать подходящий путь решения поставленных задач.
@@ -465,7 +423,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="algorithm-tabs-main__actions">
+                                <div class="algorithm-tabs-main__actions animated fadeInUp ">
                                     <button class="algorithm-tabs-main__download-brief">
                                         Скачать бриф
                                     </button>
@@ -475,15 +433,16 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="algorithm-tabs-main__item">
                             <div class="algorithm-tabs-main__item-wrap">
                                 <div class="algorithm-tabs-main__main">
                                     <div class="algorithm-tabs-main__view">
-                                        <img src="images/algorithm/brief-logo.png" alt="brief-logo">
+                                        <img class="animated fadeInLeft" src="images/algorithm/brief-logo.png" alt="brief-logo">
                                     </div>
                                     <div class="algorithm-tabs-main__description">
-                                        <h4 class="algorithm-tabs-main__title">Разработка</h4>
-                                        <div class="algorithm-tabs-main__content">
+                                        <h4 class="algorithm-tabs-main__title animated fadeInDown ">Дизайн</h4>
+                                        <div class="algorithm-tabs-main__content animated fadeInRight ">
                                             <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
                                                 мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
                                                 ваш будущий проект и выбрать подходящий путь решения поставленных задач.
@@ -491,7 +450,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="algorithm-tabs-main__actions">
+                                <div class="algorithm-tabs-main__actions animated fadeInUp">
                                     <button class="algorithm-tabs-main__download-brief">
                                         Скачать бриф
                                     </button>
@@ -501,15 +460,16 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="algorithm-tabs-main__item">
                             <div class="algorithm-tabs-main__item-wrap">
                                 <div class="algorithm-tabs-main__main">
                                     <div class="algorithm-tabs-main__view">
-                                        <img src="images/algorithm/brief-logo.png" alt="brief-logo">
+                                        <img class="animated fadeInLeft" src="images/algorithm/brief-logo.png" alt="brief-logo">
                                     </div>
                                     <div class="algorithm-tabs-main__description">
-                                        <h4 class="algorithm-tabs-main__title">Тестирование</h4>
-                                        <div class="algorithm-tabs-main__content">
+                                        <h4 class="algorithm-tabs-main__title animated fadeInDown">Разработка</h4>
+                                        <div class="algorithm-tabs-main__content animated fadeInRight ">
                                             <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
                                                 мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
                                                 ваш будущий проект и выбрать подходящий путь решения поставленных задач.
@@ -517,7 +477,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="algorithm-tabs-main__actions">
+                                <div class="algorithm-tabs-main__actions animated fadeInUp">
                                     <button class="algorithm-tabs-main__download-brief">
                                         Скачать бриф
                                     </button>
@@ -527,6 +487,34 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="algorithm-tabs-main__item">
+                            <div class="algorithm-tabs-main__item-wrap">
+                                <div class="algorithm-tabs-main__main">
+                                    <div class="algorithm-tabs-main__view">
+                                        <img class="animated fadeInLeft " src="images/algorithm/brief-logo.png" alt="brief-logo">
+                                    </div>
+                                    <div class="algorithm-tabs-main__description">
+                                        <h4 class="algorithm-tabs-main__title animated fadeInDown ">Тестирование</h4>
+                                        <div class="algorithm-tabs-main__content animated fadeInRight ">
+                                            <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
+                                                мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
+                                                ваш будущий проект и выбрать подходящий путь решения поставленных задач.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="algorithm-tabs-main__actions animated fadeInUp ">
+                                    <button class="algorithm-tabs-main__download-brief">
+                                        Скачать бриф
+                                    </button>
+                                    <button class="algorithm-tabs-main__get-started js_main-modal">
+                                        Начать работу
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -534,14 +522,14 @@
     </section>
 
 
-    <section class="site-price">
+    <section class="site-price animatedParent animateOnce" data-sequence='400' data-appear-top-offset='-200'>
         <div class="container">
             <div class="site-price__wrap">
-                <div class="site-price__view wow fadeInLeft" data-wow-offset="400">
+                <div class="site-price__view animated fadeInLeft" data-id='1'>
                     <img src="images/site-price/diagram.png" alt="diagram img">
                     <p class="site-price__value"><span class="site-price__sign">></span><span class="site-price__num">200 000</span><span class="site-price__currency">c</span></p>
                 </div>
-                <div class="site-price__description wow fadeInRight" data-wow-offset="100">
+                <div class="site-price__description animated fadeInRight" data-id='2'>
                     <h4 class="site-price__title">
                         Сколько стоит сайт?
                     </h4>
@@ -557,11 +545,11 @@
     </section>
 
 
-    <section class="services">
+    <section class="services animatedParent animateOnce" data-sequence='400' data-appear-top-offset='-200'>
         <div class="container">
-            <h4 class="services__title wow bounceInLeft">Дополнительные услуги</h4>
+            <h4 class="services__title animated bounceInLeft" data-id='1'>Дополнительные услуги</h4>
             <div class="services__list">
-                <div class="services-item wow bounceInLeft" data-wow-delay="0.2">
+                <div class="services-item animated fadeInLeft" data-id='2'>
                     <div class="services-item__view">
                         <img src="images/services/technical-support.png" alt="technical-support">
                     </div>
@@ -575,7 +563,7 @@
                         алгоритмы.
                     </div>
                 </div>
-                <div class="services-item wow bounceInLeft">
+                <div class="services-item animated fadeInLeft" data-id='2'>
                     <div class="services-item__view">
                         <img src="images/services/redesign.png" alt="redesign">
                     </div>
@@ -587,7 +575,7 @@
                         Главное направление развития бизнеса.
                     </div>
                 </div>
-                <div class="services-item wow bounceInRight">
+                <div class="services-item animated fadeInRight" data-id='3'>
                     <div class="services-item__view">
                         <img src="images/services/seo.png" alt="seo">
                     </div>
@@ -600,7 +588,7 @@
                         бизнеса.
                     </div>
                 </div>
-                <div class="services-item wow bounceInRight" data-wow-delay="0.2">
+                <div class="services-item animated fadeInRight" data-id='3'>
                     <div class="services-item__view">
                         <img src="images/services/context.png" alt="advertising">
                     </div>
@@ -615,19 +603,19 @@
                     </div>
                 </div>
             </div>
-            <button class="services__order-btn js_main-modal">Заказать услуги</button>
+            <button class="services__order-btn js_main-modal animated bounceInUp" data-id='4'>Заказать услуги</button>
         </div>
     </section>
 
 
-    <section class="new-project">
+    <section class="new-project animatedParent animateOnce" data-sequence='200' data-appear-top-offset='-200'>
         <div class="container">
-            <h2 class="new-project__title wow fadeInLeftBig">Начать проект</h2>
+            <h2 class="new-project__title">Начать проект</h2>
             <form class="new-project-form">
-                <input class="new-project-form__input wow fadeInLeftBig" type="text" name="name" placeholder="Представтесь, пожалуйста">
-                <input class="new-project-form__input wow fadeInLeftBig" data-wow-delay="0.2" type="text" name="email" placeholder="Введите email">
-                <textarea class="new-project-form__textarea wow fadeInLeftBig" data-wow-delay="0.4" rows="5" type="text" name="projects" placeholder="Расскажите немного о вашем проекте"></textarea>
-                <div class="new-project-form__actions wow fadeInLeftBig" data-wow-delay="0.6">
+                <input class="new-project-form__input animated fadeInLeft" data-id='1' type="text" name="name" placeholder="Представтесь, пожалуйста">
+                <input class="new-project-form__input animated fadeInLeft" data-id='2' type="text" name="email" placeholder="Введите email">
+                <textarea class="new-project-form__textarea animated fadeInLeft" data-id='3' rows="5" type="text" name="projects" placeholder="Расскажите немного о вашем проекте"></textarea>
+                <div class="new-project-form__actions animated fadeInLeft" data-id='4'>
 
                     <div class="file-upload-wrap">
                         <div class="file-upload">
@@ -643,7 +631,7 @@
                 </div>
             </form>
 
-            <div class="contact-us wow fadeInLeftBig" data-wow-delay="0.8">
+            <div class="contact-us animated fadeInLeft" data-id='5'>
                 <h3 class="contact-us__title">Или свяжитесь с нами:</h3>
                 <div class="contact-us__content">
                     <a class="contact-us__phone" href="tel:+7(383)383 0717">+7 (383) 383-07-17</a>
@@ -697,6 +685,13 @@
     </div>
 </div>
 
+<script type="text/javascript" src="plugins/jquery-3.3.1.js"></script>
+<!--<script type="text/javascript" src="plugins/css3-animate-it-master/js/css3-animate-it.js"></script>-->
+<script type="text/javascript" src="plugins/slick/slick.js"></script>
+<script type="text/javascript" src="plugins/jquery.validate.min.js"></script>
+<script type="text/javascript" src="plugins/maskedinput/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="scripts/bundle.js"></script>
 
 </body>
 </html>
