@@ -2,7 +2,7 @@
   &__item {
     position: relative;
     display: flex!important;
-    height: 89px;
+    height: 80px;
     //width: 260px;
     margin-right: 40px;
     border-top-left-radius: 30px;
@@ -20,12 +20,18 @@
       color: #878787;
       text-transform: uppercase;
       align-self: center;
+      font-size: 14px;
       &:before {
-        content: url("../images/algorithm/check-mark-icon.png");
+        content: '';
+        background-image: url("../images/algorithm/check-mark-icon.png");
+        background-size: cover;
         display: inline-block;
         margin-right: 10px;
         vertical-align: middle;
         opacity: 0;
+
+        width: 33px;
+        height: 33px;
       }
     }
     &:last-child {
@@ -38,7 +44,7 @@
       display: block;
       position: absolute;
       right: -25px;
-      top: 25%;
+      top: 20%;
       height: auto;
       font-family: FontAwesome, sans-serif;
       content: '\f105';
@@ -46,24 +52,23 @@
       font-size: 32px;
     }
     &:nth-child(1) {
-      width: 250px!important;
+      width: 233px!important;
     }
     &:nth-child(2) {
-      //width: 250px!important;
+      width: 218px!important;
     }
     &:nth-child(3) {
-      width: 190px!important;
+      width: 137px!important;
     }
     &:nth-child(4) {
-      width: 210px!important;
+      width: 180px!important;
     }
     &:nth-child(5) {
-      width: 320px!important;
+      width: 265px!important;
     }
   }
   &__item_visited {
     p {
-      //color: red;
       &:before {
         filter: brightness(0.1);
         opacity: 0.17;

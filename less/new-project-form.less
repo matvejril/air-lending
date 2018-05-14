@@ -1,10 +1,10 @@
 .new-project-form {
   max-width: 470px;
-  margin: 0 auto 82px auto;
+  margin: 0 auto 48px auto;
   &__input {
     width: 100%;
-    padding: 19px 15px;
-    margin-bottom: 20px;
+    padding: 13px 15px;
+    margin-bottom: 17px;
     border: 2px solid #b2b2b2;
     border-radius: 35px;
     background: transparent;
@@ -31,18 +31,18 @@
   }
   &__textarea {
     width: 100%;
-    margin: 0 0 35px 0;
+    margin: 0 0 12px 0;
     color: #222222;
     background: transparent;
     border: 2px solid #b2b2b2;
     border-radius: 30px;
     font-family: "Roboto-Light", sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     box-sizing: border-box;
     resize: none;
     outline: none;
     text-align: center;
-    padding: 18px 15px 23px 15px;
+    padding: 13px 15px 21px 15px;
 
     &::-webkit-input-placeholder {color:#b2b2b2;}
     &::-moz-placeholder          {color:#b2b2b2;}/* Firefox 19+ */
@@ -64,30 +64,24 @@
     justify-content: space-between;
   }
 
-  //&__affix {
-  //  font-family: "Geometria-Bold", sans-serif;
-  //  text-transform: uppercase;
-  //  padding: 10px 10px 10px 49px;
-  //  box-sizing: border-box;
-  //  color: #00a1e4;
-  //  background: url(../images/icons/affix.png) no-repeat 5px 0 transparent;
-  //  border: none;
-  //  outline: none;
-  //  align-self: center
-  //}
-
   &__submit {
     margin: 0;
-    padding: 21px 43px;
+    padding: 16px 38px 18px 41px;
     border: none;
     border-radius: 27px;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #ed1c2b;
     font-family: "Geometria-Medium", sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     outline: none;
-    align-self: center
+    align-self: center;
+
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+      background-color: #00a1e4;
+    }
   }
 
   .error {

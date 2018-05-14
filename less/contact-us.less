@@ -2,9 +2,9 @@
   max-width: 470px;
   margin: 0 auto;
   &__title {
-    margin: 0 0 24px 3px;
+    margin: 0 0 19px 3px;
     font-family: "Geometria", sans-serif;
-    font-size: 36px;
+    font-size: 30px;
     color: #000000;
   }
 
@@ -12,12 +12,18 @@
     font-family: "Roboto-Regular", sans-serif;
   }
   &__phone {
-    margin-right: 10px;
-    font-size: 24px;
+    margin-right: 16px;
+    font-size: 22px;
     color: #000000;
   }
   &__mail {
     color: #00a1e4;
-    font-size: 25px;
+    font-size: 22px;
+
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+      color: #ed1c2b;
+    }
   }
 }

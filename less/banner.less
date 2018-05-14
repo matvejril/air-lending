@@ -1,18 +1,19 @@
 .banner {
-  padding: 217px 0 44px 0;
+  padding: 172px 0 30px 0;
   background: url(../images/banner-bg.jpg) no-repeat top center;
   background-size: cover;
   &__title {
     font-family: "Geometria-ExtaBold", sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1.3;
     text-transform: uppercase;
     color: #ffffff;
-    margin: 0 0 32px 0;
+    margin: 0 0 37px 0;
+    letter-spacing: -1.35px;
   }
   &__content {
-    max-width: 725px;
-    margin-bottom: 92px;
+    max-width: 890px;
+    margin-bottom: 90px;
     font-family: "Roboto-Light", sans-serif;
     color: #ffffff;
     font-size: 18px;
@@ -27,27 +28,40 @@
   }
 
   &__get-offers {
-    padding: 21px 26px;
+    padding: 18px 28px 16px 32px;
     margin-right: 10px;
     border: none;
     border-radius: 27px;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #ed1c2b;
     font-family: "Geometria-Medium", sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     outline: none;
+
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+      background-color: #00a1e4;
+    }
   }
 
   &__download-brief {
-    padding: 18px 22px 18px 24px;
+    padding: 15px 28px 13px 26px;
     background: transparent;
     border: 3px solid #00a1e4;
     border-radius: 30px;
     font-family: "Geometria-Medium", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #00a1e4;
     text-transform: uppercase;
     outline: none;
+
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+      color: #ffffff;
+      background-color: #00a1e4;
+    }
   }
 }
