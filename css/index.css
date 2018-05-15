@@ -5573,8 +5573,7 @@ img.mfp-img {
   left: -60px;
 }
 .projects-gallery-nav .slick-prev:before {
-  font-family: FontAwesome, sans-serif;
-  content: '\f104';
+  content: url("../images/icons/left-arr.png");
   color: black;
   font-size: 62px;
 }
@@ -5582,8 +5581,7 @@ img.mfp-img {
   right: -60px;
 }
 .projects-gallery-nav .slick-next:before {
-  font-family: FontAwesome, sans-serif;
-  content: '\f105';
+  content: url("../images/icons/right-arr.png");
   color: black;
   font-size: 62px;
 }
