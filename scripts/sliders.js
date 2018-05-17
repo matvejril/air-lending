@@ -1,8 +1,7 @@
 (function() {
     // Слайдер с нашими работами
-
     var jobsSliderMain = $('.projects-gallery-main__list');
-    var jobsSliderSecond = $('.projects-gallery-nav');
+    var jobsSliderSecond = $('.projects-gallery-nav__list');
     if (jobsSliderMain) {
         $(jobsSliderMain).slick({
             slidesToShow: 1,
@@ -23,28 +22,84 @@
             })
             .slick({
                 slidesToShow: 5,
-                slidesToScroll: 5,
+                slidesToScroll: 1,
                 dots: false,
-                focusOnSelect: false,
-                infinite: true
+                focusOnSelect: true,
+                asNavFor: '.projects-gallery-main__list',
+                infinite: true,
+                arrows: true,
+                centerMode: true,
+                centerPadding: '0'
             });
+
+        var removeAnimateSlide = function ($contentSlider) {
+            var $animations = $contentSlider.find('.animated');
+            $animations.removeClass('go');
+        };
+        var animateSlide = function ($contentSlider) {
+            $contentSlider.find('.slick-current .animated').addClass('go')
+        };
 
         // Свойства и методы слайдера с алгоритмом реализации
         jobsSliderMain.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-            var el = $('.projects-gallery-main__item').eq(nextSlide).find('.animated');
-            el.toggle().toggle();
+            removeAnimateSlide(jobsSliderMain)
         });
 
-        jobsSliderSecond.on('click', '.slick-slide', function (event) {
-            event.preventDefault();
-            var goToSingleSlide = $(this).data('slick-index');
-            jobsSliderMain.slick('slickGoTo', goToSingleSlide);
-
-            $('.projects-gallery-nav .is-active').removeClass('is-active');
-            $(this).addClass('is-active');
-
+        jobsSliderMain.on('afterChange', function () {
+            animateSlide(jobsSliderMain);
         });
+
+        // jobsSliderSecond.on('click', '.slick-slide', function (event) {
+        //     event.preventDefault();
+        //     var goToSingleSlide = $(this).data('slick-index');
+        //     jobsSliderMain.slick('slickGoTo', goToSingleSlide);
+        //
+        //     $('.projects-gallery-nav .is-active').removeClass('is-active');
+        //     $(this).addClass('is-active');
+        //
+        // });
+
+
+
+        // var $arrPrev = $('.projects-gallery-nav__prev');
+        // var $arrNext = $('.projects-gallery-nav__next');
+        // $arrPrev.on("click", function() {
+        //     jobsSliderMain.slick('slickPrev');
+        //     jobsSliderSecond.slick('slickPrev');
+        //
+        //     var indexActive = $('.projects-gallery-nav .is-active').index();
+        //     var $projectsGalleryNavItem = $('.projects-gallery-nav__item');
+        //
+        //     $projectsGalleryNavItem.removeClass('is-active');
+        //     $projectsGalleryNavItem.eq(indexActive).addClass('is-active');
+        //     console.log(indexActive, "length", $projectsGalleryNavItem.length);
+        // });
+        //
+        // $arrNext.on("click", function() {
+        //
+        //     var $projectsGalleryNavItem = $('.projects-gallery-nav__item');
+        //     var $projectsGalleryNavItemLength = $projectsGalleryNavItem.length;
+        //     var indexActive = $('.projects-gallery-nav .is-active').index();
+        //     console.log("$projectsGalleryNavItemLength", $projectsGalleryNavItemLength, "indexActive", indexActive);
+        //     if ($projectsGalleryNavItemLength > indexActive - 2) {
+        //         jobsSliderMain.slick('slickNext');
+        //         jobsSliderSecond.slick('slickNext');
+        //         indexActive += 1;
+        //
+        //         $projectsGalleryNavItem.removeClass('is-active');
+        //         $projectsGalleryNavItem.eq(indexActive).addClass('is-active');
+        //     } else {
+        //         indexActive= 0;
+        //     }
+        //
+        //
+        //
+        //
+        //     // console.log(indexActive, "length", $projectsGalleryNavItem.length);
+        // })
+
     }
+
 
     // Слайдер с алгоритмом реализации
     var algorithmSliderSecond = $('.algorithm-tabs-nav');
@@ -77,50 +132,22 @@
             });
 
         // Свойства и методы слайдера с алгоритмом реализации
-        var algorithmTabsNavItemAll = document.querySelectorAll('.algorithm-tabs-nav__item');
-        var maxState = 0;
-        algorithmTabsNavItemAll[1].classList.add("algorithm-tabs-nav__item_next");
+        algorithmSliderMain.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
+            removeAnimateSlide(algorithmSliderMain);
+        });
 
         algorithmSliderMain.on('afterChange', function(event, slick, currentSlide) {
             algorithmSliderSecond.slick('slickGoTo', currentSlide);
-            // var currentNavSlideElem = '.algorithm-tabs-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
-            // $('.algorithm-tabs-nav .is-active').removeClass('is-active');
-            // $(currentNavSlideElem).addClass('is-active');
-
-        });
-
-        algorithmSliderMain.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
-            var algorithmTabsNavItem = algorithmTabsNavItemAll[currentSlide];
-            var algorithmTabsNavItemHasClass = algorithmTabsNavItem.classList.contains('algorithm-tabs-nav__item_visited');
-
-            var el = $('.algorithm-tabs-main__item').eq(nextSlide).find('.animated');
-            el.toggle().toggle();
-
-            if (!algorithmTabsNavItemHasClass) {
-                algorithmTabsNavItem.classList.add('algorithm-tabs-nav__item_visited')
-            }
+            animateSlide(algorithmSliderMain);
         });
 
         algorithmSliderSecond.on('click', '.slick-slide', function(event) {
             event.preventDefault();
             // Получаем позиции активного элемента и кликнутого
-            // var activeElementState = $('.algorithm-tabs-nav').find('.is-active').index();
             var goToElementState = $(this).data('slick-index');
-
-            // Ограничиваем возможность перехоа к элементу вправо +1 или обратно
-            if ( maxState + 1 >= goToElementState) {
                 algorithmSliderMain.slick('slickGoTo', goToElementState);
                 $('.algorithm-tabs-nav .is-active').removeClass('is-active');
                 $(this).addClass('is-active');
-                // Добавляем синее выжелении
-                if (maxState < goToElementState) {
-                    maxState = goToElementState;
-                    for (var e = 0; e < maxState + 1; e++) {
-                        algorithmTabsNavItemAll[e].classList.remove('algorithm-tabs-nav__item_next');
-                    }
-                    algorithmTabsNavItemAll[maxState + 1].classList.add('algorithm-tabs-nav__item_next');
-                }
-            }
         });
 
     }

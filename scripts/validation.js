@@ -5,10 +5,14 @@
                 required: true,
                 minlength: 3
             },
-            email: {
+            phone: {
                 required: true,
-                email: true
+                minlength: 5
             }
+            // email: {
+            //     required: true,
+            //     email: true
+            // }
         }
     });
 

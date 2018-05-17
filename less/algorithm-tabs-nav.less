@@ -3,14 +3,11 @@
     position: relative;
     display: flex!important;
     height: 80px;
-    //width: 260px;
     margin-right: 40px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     outline: none;
-
     white-space: nowrap;
-    opacity: 0.7;
 
     -webkit-transition: background-color .3s;
     transition: background-color .3s;
@@ -21,17 +18,24 @@
       text-transform: uppercase;
       align-self: center;
       font-size: 14px;
+
+      -webkit-transition: color .3s;
+      transition: color .3s;
       &:before {
+        width: 33px;
+        height: 33px;
         content: '';
-        background-image: url("../images/algorithm/check-mark-icon.png");
-        background-size: cover;
+        background: url("../images/algorithm/check-mark-icon.png") no-repeat center;
+        background-size: contain;
         display: inline-block;
         margin-right: 10px;
         vertical-align: middle;
-        opacity: 0;
 
-        width: 33px;
-        height: 33px;
+        filter: brightness(0.1);
+        opacity: 0.17;
+
+        -webkit-transition: filter .3s, opacity .3s;
+        transition: filter .3s, opacity .3s;
       }
     }
     &:last-child {
@@ -66,25 +70,12 @@
     &:nth-child(5) {
       width: 265px!important;
     }
-  }
-  &__item_visited {
-    p {
-      &:before {
-        filter: brightness(0.1);
-        opacity: 0.17;
+    &:hover {
+      cursor: pointer;
+      p {
+        color: #00a1e4;
+        opacity: 1;
       }
-    }
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  &__item_next {
-    p {
-      color: #00a1e4;
-    }
-    &:hover {
-      cursor: pointer;
     }
   }
 

@@ -1,9 +1,7 @@
 .projects-gallery-nav {
+  position: relative;
   max-width: 1080px;
   margin: 0 auto 0 auto;
-  //&__list {
-  //
-  //}
   &__item {
     display: flex!important;
     height: 102px;
@@ -23,10 +21,15 @@
     }
   }
 
-  .is-active {
+  .slick-current {
     background-color: #ffffff;
     opacity: 1;
   }
+
+  //.is-active {
+  //  background-color: #ffffff;
+  //  opacity: 1;
+  //}
 
   .slick-arrow {
     top: 47%;
@@ -50,4 +53,35 @@
       font-size: 62px;
     }
   }
+
+  //&__arrow {
+  //  position: absolute;
+  //  top: 47%;
+  //  height: auto;
+  //  padding: 0;
+  //  border: none;
+  //  background-color: transparent;
+  //  transform: translate(0, -50%);
+  //  z-index: 1;
+  //  outline: none;
+  //}
+  //
+  //&__prev {
+  //  left: -60px;
+  //  &:before {
+  //    content: url("../images/icons/left-arr.png");
+  //    color: black;
+  //    font-size: 62px;
+  //  }
+  //}
+  //
+  //&__next {
+  //  right: -60px;
+  //  &:before {
+  //    content: url("../images/icons/right-arr.png");
+  //    color: black;
+  //    font-size: 62px;
+  //  }
+  //}
+
 }

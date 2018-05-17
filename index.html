@@ -7,10 +7,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
+    <!--<link rel="icon" href="images/favicon.ico" type="image/x-icon">-->
 
     <link href="css/index.css" rel="stylesheet">
+
+    <script type="text/javascript" src="plugins/jquery-3.3.1.js"></script>
 
 </head>
 
@@ -50,7 +52,7 @@
     </section>
 
 
-    <section class="advantages animatedParent animateOnce" data-sequence='300' data-appear-top-offset='-100'>
+    <section class="advantages animatedParent animateOnce" id="advantages" data-sequence='300' data-appear-top-offset='-100'>
         <div class="container">
             <h2 class="advantages__title animated fadeInLeft" data-id='1'>Причины обратиться к нам</h2>
             <p class="advantages__sub-title animated fadeInLeft" data-id='2'>Преимущества наших интернет-магазинов</p>
@@ -119,13 +121,17 @@
                     <img src="images/cms/modex.png" alt="modex img">
                 </li>
                 <li class="cms-item animated fadeIn" data-id='3'>
-                    <img src="images/cms/other.png" alt="other img">
+                    <img src="images/cms/opencart.png" alt="opencart img">
                 </li>
                 <li class="cms-item animated fadeInRight" data-id='4'>
                     <img src="images/cms/wordpress.png" alt="wordpress img">
                 </li>
                 <li class="cms-item animated fadeInRight" data-id='5'>
-                    <img src="images/cms/opencart.png" alt="opencart img">
+                    <!--<img src="images/cms/other.png" alt="other img">-->
+                    <div class="cms-item__inner">
+                        <p class="cms-item__title">15+</p>
+                        <p class="cms-item__text">рабочих платформ</p>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -160,40 +166,44 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2 class="projects__title">Наши работы</h2>
         <div class="projects-gallery">
             <div class="projects-gallery-nav">
-                <div class="projects-gallery-nav__item">
-                    <img src="images/projects/logos/s-konto.png" alt="s-konto img">
+                <!--<button class="projects-gallery-nav__prev projects-gallery-nav__arrow"></button>-->
+                <div class="projects-gallery-nav__list">
+                    <div class="projects-gallery-nav__item">
+                        <img src="images/projects/logos/s-konto.png" alt="s-konto img">
+                    </div>
+                    <div class="projects-gallery-nav__item">
+                        <img src="images/projects/logos/floraOpt.png" alt="floraOpt img">
+                    </div>
+                    <div class="projects-gallery-nav__item">
+                        <img src="images/projects/logos/advantage.png" alt="advantage img">
+                    </div>
+                    <div class="projects-gallery-nav__item">
+                        <img src="images/projects/logos/aliance-sts.png" alt="aliance-sts img">
+                    </div>
+                    <div class="projects-gallery-nav__item">
+                        <img src="images/projects/logos/yans.png" alt="yans img">
+                    </div>
+                    <div class="projects-gallery-nav__item">
+                        <img src="images/projects/logos/yans.png" alt="yans img">
+                    </div>
                 </div>
-                <div class="projects-gallery-nav__item">
-                    <img src="images/projects/logos/floraOpt.png" alt="floraOpt img">
-                </div>
-                <div class="projects-gallery-nav__item">
-                    <img src="images/projects/logos/advantage.png" alt="advantage img">
-                </div>
-                <div class="projects-gallery-nav__item">
-                    <img src="images/projects/logos/aliance-sts.png" alt="aliance-sts img">
-                </div>
-                <div class="projects-gallery-nav__item">
-                    <img src="images/projects/logos/yans.png" alt="yans img">
-                </div>
-                <div class="projects-gallery-nav__item">
-                    <img src="images/projects/logos/yans.png" alt="yans img">
-                </div>
+                <!--<button class="projects-gallery-nav__next projects-gallery-nav__arrow"></button>-->
             </div>
             <div class="projects-gallery-main animatedParent animateOnce"  data-appear-top-offset='-100'>
                 <div class="projects-gallery-main__list">
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
-                            <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="animated fadeInLeft" src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                            <a class="projects-gallery-main__view-link animated fadeInLeft" href="images/projects/contents/floraOpt.png">
+                                <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
                             <h4 class="projects-gallery-main__title animated fadeInDown">
-                                FloraOpt — цветочная продукция<br>
+                                S-konto — цветочная продукция<br>
                                 в розницу по оптовым ценам
                             </h4>
                             <div class="projects-gallery-main__content animated fadeInRight">
@@ -213,8 +223,8 @@
                     </div>
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
-                            <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="animated fadeInLeft" src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                            <a class="projects-gallery-main__view-link animated fadeInLeft" href="images/projects/contents/floraOpt.png">
+                                <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
@@ -240,13 +250,13 @@
 
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
-                            <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="animated fadeInLeft " src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                            <a class="projects-gallery-main__view-link animated fadeInLeft" href="images/projects/contents/floraOpt.png">
+                                <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
                             <h4 class="projects-gallery-main__title animated fadeInDown ">
-                                FloraOpt — цветочная продукция
+                                AVANTAGE — цветочная продукция
                                 в розницу по оптовым ценам
                             </h4>
                             <div class="projects-gallery-main__content animated fadeInRight ">
@@ -267,13 +277,13 @@
 
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
-                            <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="animated fadeInLeft " src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                            <a class="projects-gallery-main__view-link animated fadeInLeft" href="images/projects/contents/floraOpt.png">
+                                <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
                             <h4 class="projects-gallery-main__title animated fadeInDown ">
-                                FloraOpt — цветочная продукция
+                                Aliance — цветочная продукция
                                 в розницу по оптовым ценам
                             </h4>
                             <div class="projects-gallery-main__content animated fadeInRight ">
@@ -294,13 +304,13 @@
 
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
-                            <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="animated fadeInLeft " src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                            <a class="projects-gallery-main__view-link animated fadeInLeft" href="images/projects/contents/floraOpt.png">
+                                <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
                             <h4 class="projects-gallery-main__title animated fadeInDown ">
-                                FloraOpt — цветочная продукция
+                                yans — цветочная продукция
                                 в розницу по оптовым ценам
                             </h4>
                             <div class="projects-gallery-main__content animated fadeInRight ">
@@ -321,13 +331,13 @@
 
                     <div class="projects-gallery-main__item">
                         <div class="projects-gallery-main__view">
-                            <a class="projects-gallery-main__view-link" href="images/projects/contents/floraOpt.png">
-                                <img class="animated fadeInLeft " src="images/projects/contents/floraOpt.png" alt="floraOpt img">
+                            <a class="projects-gallery-main__view-link animated fadeInLeft" href="images/projects/contents/floraOpt.png">
+                                <img src="images/projects/contents/floraOpt.png" alt="floraOpt img">
                             </a>
                         </div>
                         <div class="projects-gallery-main__description">
                             <h4 class="projects-gallery-main__title animated fadeInDown ">
-                                FloraOpt — цветочная продукция
+                                yans — цветочная продукция
                                 в розницу по оптовым ценам
                             </h4>
                             <div class="projects-gallery-main__content animated fadeInRight ">
@@ -351,7 +361,7 @@
     </section>
 
 
-    <section class="algorithm">
+    <section class="algorithm" id="algorithm">
         <h2 class="algorithm__title">
             Алгоритм реализации
         </h2>
@@ -376,7 +386,7 @@
                 </div>
             </div>
 
-            <div class="algorithm-tabs-main animatedParent animateOnce" data-appear-top-offset='-100'>
+            <div class="algorithm-tabs-main animatedParent animateOnce" data-appear-top-offset='100'>
                 <div class="container">
                     <div class="algorithm-tabs-main__list">
 
@@ -389,9 +399,9 @@
                                     <div class="algorithm-tabs-main__description">
                                         <h4 class="algorithm-tabs-main__title animated fadeInDown ">Брифинг</h4>
                                         <div class="algorithm-tabs-main__content animated fadeInRight ">
-                                            <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
-                                                мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
-                                                ваш будущий проект и выбрать подходящий путь решения поставленных задач.
+                                            <p>Чтобы получить необходимую информацию, вам предлагается заполнить бриф. На его основании мы сможем
+                                                сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать будущий
+                                                проект и выбрать подходящий путь решения поставленных задач.
                                             </p>
                                         </div>
                                     </div>
@@ -411,14 +421,14 @@
                             <div class="algorithm-tabs-main__item-wrap">
                                 <div class="algorithm-tabs-main__main">
                                     <div class="algorithm-tabs-main__view">
-                                        <img class="animated fadeInLeft" src="images/algorithm/brief-logo.png" alt="brief-logo">
+                                        <img class="animated fadeInLeft" src="images/algorithm/project-logo.png" alt="project-logo">
                                     </div>
                                     <div class="algorithm-tabs-main__description">
-                                        <h4 class="algorithm-tabs-main__title animated fadeInDown ">Проектирывание</h4>
+                                        <h4 class="algorithm-tabs-main__title animated fadeInDown ">Прототипирование и техническое задание</h4>
                                         <div class="algorithm-tabs-main__content animated fadeInRight ">
-                                            <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
-                                                мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
-                                                ваш будущий проект и выбрать подходящий путь решения поставленных задач.
+                                            <p>Проектирование сайта — ёмкий процесс. Чтобы достичь желаемого результата, важно создать<a class="algorithm-tabs-main__link" href="#">прототип</a>,
+                                                который поможет визуально представить размещение всех элементов на странице. Техническое задание —
+                                                не менее важная часть подготовки к работе, содержащая все технические требования к сайту.
                                             </p>
                                         </div>
                                     </div>
@@ -438,14 +448,14 @@
                             <div class="algorithm-tabs-main__item-wrap">
                                 <div class="algorithm-tabs-main__main">
                                     <div class="algorithm-tabs-main__view">
-                                        <img class="animated fadeInLeft" src="images/algorithm/brief-logo.png" alt="brief-logo">
+                                        <img class="animated fadeInLeft" src="images/algorithm/design-logo.png" alt="design-logo">
                                     </div>
                                     <div class="algorithm-tabs-main__description">
-                                        <h4 class="algorithm-tabs-main__title animated fadeInDown ">Дизайн</h4>
+                                        <h4 class="algorithm-tabs-main__title animated fadeInDown ">Дизайн-концепция и внутренние страницы</h4>
                                         <div class="algorithm-tabs-main__content animated fadeInRight ">
-                                            <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
-                                                мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
-                                                ваш будущий проект и выбрать подходящий путь решения поставленных задач.
+                                            <p>На основании прототипов и технического задания дизайнер реализует в виде макетов все страницы сайта,
+                                                начиная с главной. Прорисовывает иконки, элементы функционала, по необходимости добавляет
+                                                тематические изображения.
                                             </p>
                                         </div>
                                     </div>
@@ -465,14 +475,15 @@
                             <div class="algorithm-tabs-main__item-wrap">
                                 <div class="algorithm-tabs-main__main">
                                     <div class="algorithm-tabs-main__view">
-                                        <img class="animated fadeInLeft" src="images/algorithm/brief-logo.png" alt="brief-logo">
+                                        <img class="animated fadeInLeft" src="images/algorithm/develop-logo.png" alt="develop-logo">
                                     </div>
                                     <div class="algorithm-tabs-main__description">
-                                        <h4 class="algorithm-tabs-main__title animated fadeInDown">Разработка</h4>
+                                        <h4 class="algorithm-tabs-main__title animated fadeInDown">Верстка и программирование</h4>
                                         <div class="algorithm-tabs-main__content animated fadeInRight ">
-                                            <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
-                                                мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
-                                                ваш будущий проект и выбрать подходящий путь решения поставленных задач.
+                                            <p>Из готового дизайна собираются все элементы в виде интерактивного макета, который вы сможете
+                                                посмотреть с компьютера или телефона и оценить его работу. Именно так и будет выглядеть ваш сайт.
+                                                На основании технического задания программисты пишут код, «прикручивая» его к интерактивному макету,
+                                                тем самым создавая финальную версию сайта.
                                             </p>
                                         </div>
                                     </div>
@@ -492,14 +503,14 @@
                             <div class="algorithm-tabs-main__item-wrap">
                                 <div class="algorithm-tabs-main__main">
                                     <div class="algorithm-tabs-main__view">
-                                        <img class="animated fadeInLeft " src="images/algorithm/brief-logo.png" alt="brief-logo">
+                                        <img class="animated fadeInLeft" src="images/algorithm/test-logo.png" alt="test-logo">
                                     </div>
                                     <div class="algorithm-tabs-main__description">
-                                        <h4 class="algorithm-tabs-main__title animated fadeInDown ">Тестирование</h4>
+                                        <h4 class="algorithm-tabs-main__title animated fadeInDown ">Тестирование и запуск</h4>
                                         <div class="algorithm-tabs-main__content animated fadeInRight ">
-                                            <p>Чтобы получить необходимую информацию, предлагается заполнить бриф и прислать нам. На его основании
-                                                мы сможем сделать оценку, более предметно разобрать требования к функционалу сайта, проанализировать
-                                                ваш будущий проект и выбрать подходящий путь решения поставленных задач.
+                                            <p>Чтобы выявить все недостатки и неполадки перед релизом проекта, необходимо провести тестирование
+                                                и исправить все недочёты, согласовав правки с заказчиком. Далее происходит регистрация доменного имени,
+                                                оплата хостинга для размещения сайта и его официальный запуск.
                                             </p>
                                         </div>
                                     </div>
@@ -520,7 +531,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="site-price animatedParent animateOnce" data-sequence='400' data-appear-top-offset='-200'>
         <div class="container">
@@ -545,7 +555,7 @@
     </section>
 
 
-    <section class="services animatedParent animateOnce" data-sequence='400' data-appear-top-offset='-200'>
+    <section class="services animatedParent animateOnce" id="services" data-sequence='400' data-appear-top-offset='-200'>
         <div class="container">
             <h4 class="services__title animated bounceInLeft" data-id='1'>Дополнительные услуги</h4>
             <div class="services__list">
@@ -613,7 +623,9 @@
             <h2 class="new-project__title">Начать проект</h2>
             <form class="new-project-form">
                 <input class="new-project-form__input animated fadeInLeft" data-id='1' type="text" name="name" placeholder="Представтесь, пожалуйста">
-                <input class="new-project-form__input animated fadeInLeft" data-id='2' type="text" name="email" placeholder="Введите email">
+
+                <input class="new-project-form__input new-project-form__input_phone animated fadeInLeft" data-id='2' type="text" name="phone" placeholder="Введите номер телефона" >
+
                 <textarea class="new-project-form__textarea animated fadeInLeft" data-id='3' rows="6" type="text" name="projects" placeholder="Расскажите немного о вашем проекте"></textarea>
                 <div class="new-project-form__actions animated fadeInLeft" data-id='4'>
 
@@ -643,15 +655,17 @@
 </div>
 
 <footer class="footer">
-    <div class="footer__wrap">
-        <div class="copyrighted">
-            <p>© 2011—2018 «АИР»</p>
-        </div>
-        <div class="address">
-            <p>630099, Новосибирск, ул. Орджоникидзе 38, офис 202</p>
-        </div>
-        <div class="development">
-            <p>Разработка &mdash;</p><img src="images/logo.png" alt="logo">
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="copyrighted">
+                <p>© 2011—2018 «АИР»</p>
+            </div>
+            <div class="address">
+                <p>630099, Новосибирск, ул. Орджоникидзе 38, офис 202</p>
+            </div>
+            <div class="development">
+                <p>Разработка &mdash;</p><img src="images/logo.png" alt="logo">
+            </div>
         </div>
     </div>
 </footer>
@@ -683,12 +697,11 @@
     </div>
 </div>
 
-<script type="text/javascript" src="plugins/jquery-3.3.1.js"></script>
-<!--<script type="text/javascript" src="plugins/css3-animate-it-master/js/css3-animate-it.js"></script>-->
 <script type="text/javascript" src="plugins/slick/slick.js"></script>
 <script type="text/javascript" src="plugins/jquery.validate.min.js"></script>
 <script type="text/javascript" src="plugins/maskedinput/jquery.maskedinput.js"></script>
 <script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="plugins/css3-animate-it-master/js/css3-animate-it.js"></script>
 <script type="text/javascript" src="scripts/bundle.js"></script>
 
 </body>

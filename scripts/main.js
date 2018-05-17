@@ -1,7 +1,7 @@
 window.onload = function () {
 
     //plugins
-    require('../plugins/css3-animate-it-master/js/css3-animate-it');
+    // require('../plugins/css3-animate-it-master/js/css3-animate-it');
     // require('../plugins/jquery.validate.min.js');
     // require('../plugins/maskedinput/jquery.maskedinput');
     
