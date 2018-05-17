@@ -5571,8 +5571,6 @@ img.mfp-img {
   border-top-right-radius: 30px;
   outline: none;
   opacity: 0.4;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
 }
 .projects-gallery-nav__item img {
   margin: 0 auto;
@@ -5584,6 +5582,8 @@ img.mfp-img {
 .projects-gallery-nav .slick-current {
   background-color: #ffffff;
   opacity: 1;
+  -webkit-transition: background-color 0.4s, opacity 0.4s;
+  transition: background-color 0.4s, opacity 0.4s;
 }
 .projects-gallery-nav .slick-arrow {
   top: 47%;

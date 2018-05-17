@@ -13,7 +13,6 @@
             useTransform: true,
             draggable: false,
             speed: 200
-            // cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
         });
 
         jobsSliderSecond
@@ -32,6 +31,7 @@
                 centerPadding: '0'
             });
 
+
         var removeAnimateSlide = function ($contentSlider) {
             var $animations = $contentSlider.find('.animated');
             $animations.removeClass('go');
@@ -42,62 +42,14 @@
 
         // Свойства и методы слайдера с алгоритмом реализации
         jobsSliderMain.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-            removeAnimateSlide(jobsSliderMain)
+            $(currentSlide).removeClass('slick-current');
+            removeAnimateSlide(jobsSliderMain);
         });
 
-        jobsSliderMain.on('afterChange', function () {
+        jobsSliderMain.on('afterChange', function (slick, currentSlide) {
             animateSlide(jobsSliderMain);
+            $(currentSlide).addClass('slick-current');
         });
-
-        // jobsSliderSecond.on('click', '.slick-slide', function (event) {
-        //     event.preventDefault();
-        //     var goToSingleSlide = $(this).data('slick-index');
-        //     jobsSliderMain.slick('slickGoTo', goToSingleSlide);
-        //
-        //     $('.projects-gallery-nav .is-active').removeClass('is-active');
-        //     $(this).addClass('is-active');
-        //
-        // });
-
-
-
-        // var $arrPrev = $('.projects-gallery-nav__prev');
-        // var $arrNext = $('.projects-gallery-nav__next');
-        // $arrPrev.on("click", function() {
-        //     jobsSliderMain.slick('slickPrev');
-        //     jobsSliderSecond.slick('slickPrev');
-        //
-        //     var indexActive = $('.projects-gallery-nav .is-active').index();
-        //     var $projectsGalleryNavItem = $('.projects-gallery-nav__item');
-        //
-        //     $projectsGalleryNavItem.removeClass('is-active');
-        //     $projectsGalleryNavItem.eq(indexActive).addClass('is-active');
-        //     console.log(indexActive, "length", $projectsGalleryNavItem.length);
-        // });
-        //
-        // $arrNext.on("click", function() {
-        //
-        //     var $projectsGalleryNavItem = $('.projects-gallery-nav__item');
-        //     var $projectsGalleryNavItemLength = $projectsGalleryNavItem.length;
-        //     var indexActive = $('.projects-gallery-nav .is-active').index();
-        //     console.log("$projectsGalleryNavItemLength", $projectsGalleryNavItemLength, "indexActive", indexActive);
-        //     if ($projectsGalleryNavItemLength > indexActive - 2) {
-        //         jobsSliderMain.slick('slickNext');
-        //         jobsSliderSecond.slick('slickNext');
-        //         indexActive += 1;
-        //
-        //         $projectsGalleryNavItem.removeClass('is-active');
-        //         $projectsGalleryNavItem.eq(indexActive).addClass('is-active');
-        //     } else {
-        //         indexActive= 0;
-        //     }
-        //
-        //
-        //
-        //
-        //     // console.log(indexActive, "length", $projectsGalleryNavItem.length);
-        // })
-
     }
 
 
