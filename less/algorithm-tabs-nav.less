@@ -22,11 +22,7 @@
       -webkit-transition: color .3s;
       transition: color .3s;
       &:before {
-        width: 33px;
-        height: 33px;
-        content: '';
-        background: url("../images/algorithm/check-mark-icon.png") no-repeat center;
-        background-size: contain;
+        content: url("../images/algorithm/check-icon-mark.png");
         display: inline-block;
         margin-right: 10px;
         vertical-align: middle;
@@ -79,7 +75,7 @@
     }
   }
 
-  .is-active {
+  .slick-current {
     background-color: #ffffff;
     p {
       color: #3f3f3f;
@@ -87,6 +83,14 @@
         filter: brightness(1);
         opacity: 1;
       }
+    }
+    & ~ .algorithm-tabs-nav__item {
+      p {
+        &:before {
+          content: url("../images/algorithm/check-icon-empty.png");
+        }
+      }
+
     }
   }
 }
