@@ -21,7 +21,8 @@
             infinite: true,
             useTransform: true,
             draggable: false,
-            speed: 200
+            speed: 200,
+            adaptiveHeight: true
         });
 
         $jobsSliderNav
