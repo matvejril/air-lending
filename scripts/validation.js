@@ -6,8 +6,7 @@
                 minlength: 3
             },
             phone: {
-                required: true,
-                minlength: 5
+                requiredphone: true
             }
             // email: {
             //     required: true,
@@ -23,11 +22,13 @@
                 minlength: 3
             },
             phone: {
-                required: true,
-                minlength: 5
-                // digits: true
+                requiredphone: true
             }
         }
+    });
+
+    $.validator.addMethod("requiredphone", function (value, element) {
+        return value.replace(/\D+/g, '').length > 10;
     });
 
 }());
