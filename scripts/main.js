@@ -1,4 +1,4 @@
-$(document).ready = function () {
+window.onload = function () {
 
     //plugins
     // require('../plugins/css3-animate-it-master/js/css3-animate-it');
@@ -13,21 +13,14 @@ $(document).ready = function () {
     require('./file-upload');
     require('./makedinput');
     // var sds = require('./test');
-    // sds();
 
 
     var hash = location.hash;
-    console.log($('.banner'));
-    console.log("alala");
-
     if (hash && hash !== '') {
         var $elem = $(hash);
         if ($elem.length) {
-            $(window).on('load', function () {
-                var offsetTop = $elem.offset().top;
-                $('body, html').animate({opacity: 1, scrollTop: offsetTop}, 50);
-            })
+            var offsetTop = $elem.offset().top;
+            $('body, html').animate({opacity: 1, scrollTop: offsetTop}, 50);
         }
     }
-
 };

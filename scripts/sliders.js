@@ -15,7 +15,6 @@
 
         jobsSliderMain.on("init", function () {
             $('.projects-gallery').css("visibility", "visible");
-            console.log("gasf");
         });
 
         $(jobsSliderMain).slick({
@@ -63,7 +62,6 @@
 
         algorithmSliderMain.on("init", function () {
             $('.algorithm-tabs').css("visibility", "visible");
-            console.log("gasf")
         });
 
         $(algorithmSliderMain).slick({
