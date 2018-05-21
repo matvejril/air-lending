@@ -12,6 +12,12 @@
     var jobsSliderMain = $('.projects-gallery-main__list');
     var $jobsSliderNav = $('.projects-gallery-nav__list');
     if (jobsSliderMain) {
+
+        jobsSliderMain.on("init", function () {
+            $('.projects-gallery').css("visibility", "visible");
+            console.log("gasf");
+        });
+
         $(jobsSliderMain).slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -25,18 +31,17 @@
             adaptiveHeight: true
         });
 
-        $jobsSliderNav
-            .slick({
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                dots: false,
-                focusOnSelect: true,
-                asNavFor: '.projects-gallery-main__list',
-                infinite: true,
-                arrows: true,
-                centerMode: true,
-                centerPadding: '0'
-            });
+        $jobsSliderNav.slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            dots: false,
+            focusOnSelect: true,
+            asNavFor: '.projects-gallery-main__list',
+            infinite: true,
+            arrows: true,
+            centerMode: true,
+            centerPadding: '0'
+        });
 
 
         // Свойства и методы слайдера с алгоритмом реализации
@@ -53,7 +58,14 @@
     // Слайдер с алгоритмом реализации
     var $algorithmSliderNav = $('.algorithm-tabs-nav');
     var algorithmSliderMain = $('.algorithm-tabs-main__list');
+
     if (algorithmSliderMain) {
+
+        algorithmSliderMain.on("init", function () {
+            $('.algorithm-tabs').css("visibility", "visible");
+            console.log("gasf")
+        });
+
         $(algorithmSliderMain).slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -66,16 +78,16 @@
             speed: 200
         });
 
-        $algorithmSliderNav
-            .slick({
-                slidesToShow: 5,
-                slidesToScroll: 5,
-                arrows: false,
-                dots: false,
-                infinite: false,
-                focusOnSelect: true,
-                asNavFor: '.algorithm-tabs-main__list'
-            });
+        $algorithmSliderNav.slick({
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            arrows: false,
+            dots: false,
+            infinite: false,
+            focusOnSelect: true,
+            asNavFor: '.algorithm-tabs-main__list'
+        });
+
 
         var $algorithmNavItems = $(".algorithm-tabs-nav__item");
 

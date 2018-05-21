@@ -5315,8 +5315,11 @@ img.mfp-img {
   margin: 0 0 37px 0;
   letter-spacing: -1.35px;
 }
-.banner__content {
+.banner__wrap {
   max-width: 890px;
+  margin-bottom: 90px;
+}
+.banner__content {
   margin-bottom: 90px;
   font-family: "Roboto-Light", sans-serif;
   color: #ffffff;
@@ -5327,7 +5330,8 @@ img.mfp-img {
   margin: 0;
 }
 .banner__get-offers {
-  padding: 18px 28px 16px 32px;
+  display: inline-block;
+  padding: 17px 28px 17px 32px;
   margin-right: 10px;
   border: none;
   border-radius: 27px;
@@ -5344,7 +5348,8 @@ img.mfp-img {
   background-color: #00a1e4;
 }
 .banner__download-brief {
-  padding: 15px 28px 13px 26px;
+  display: inline-block;
+  padding: 14px 28px 14px 26px;
   background: transparent;
   border: 3px solid #00a1e4;
   border-radius: 30px;
@@ -5353,6 +5358,7 @@ img.mfp-img {
   color: #00a1e4;
   text-transform: uppercase;
   outline: none;
+  line-height: 1.15;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -5559,6 +5565,9 @@ img.mfp-img {
   color: #3c3c3c;
   text-align: center;
 }
+.projects-gallery {
+  visibility: hidden;
+}
 .projects-gallery-nav {
   position: relative;
   max-width: 1080px;
@@ -5615,7 +5624,7 @@ img.mfp-img {
 .projects-gallery-main__list {
   padding-top: 30px;
   margin: 0 auto;
-  max-width: 1555px;
+  max-width: 1610px;
 }
 .projects-gallery-main__item {
   display: flex!important;
@@ -5623,7 +5632,7 @@ img.mfp-img {
   outline: none;
 }
 .projects-gallery-main__view {
-  width: 51.5%;
+  width: 54%;
   align-self: flex-end;
   display: block;
   text-align: right;
@@ -5668,7 +5677,8 @@ img.mfp-img {
   margin-bottom: 0;
 }
 .projects-gallery-main__detail-case {
-  padding: 13px 23px 15px 26px;
+  display: inline-block;
+  padding: 14px 23px 14px 26px;
   margin-right: 10px;
   background: transparent;
   border: 3px solid #00a1e4;
@@ -5686,7 +5696,8 @@ img.mfp-img {
   background-color: #00a1e4;
 }
 .projects-gallery-main__get-this-case {
-  padding: 16px 24px 18px 31px;
+  display: inline-block;
+  padding: 17px 24px 17px 31px;
   border: none;
   border-radius: 27px;
   font-size: 14px;
@@ -5714,6 +5725,9 @@ img.mfp-img {
   text-transform: uppercase;
   color: #3c3c3c;
   text-align: center;
+}
+.algorithm-tabs {
+  visibility: hidden;
 }
 .algorithm-tabs-nav__item {
   position: relative;
@@ -6110,7 +6124,7 @@ img.mfp-img {
 }
 .new-project-form__submit {
   margin: 0;
-  padding: 16px 38px 18px 41px;
+  padding: 17px 38px 17px 41px;
   border: none;
   border-radius: 27px;
   font-size: 14px;
@@ -6428,7 +6442,7 @@ img.mfp-img {
   cursor: pointer;
 }
 .popup__btn-submit {
-  padding: 18px 37px 16px 43px;
+  padding: 17px 37px 17px 43px;
   border: none;
   border-radius: 27px;
   font-size: 14px;
