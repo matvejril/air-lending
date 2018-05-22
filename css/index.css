@@ -6239,6 +6239,9 @@ img.mfp-img {
 .development {
   margin-top: -4px;
 }
+.development a {
+  display: inline-block;
+}
 .development img {
   width: 56px;
   height: auto;
@@ -6479,4 +6482,12 @@ textarea:hover {
 }
 .mfp-close:hover {
   cursor: pointer!important;
+}
+.mfp-img {
+  max-height: none!important;
+  max-width: 80%!important;
+}
+.mfp-figure:after {
+  box-shadow: none!important;
+  background: transparent!important;
 }
