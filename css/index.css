@@ -5837,14 +5837,15 @@ img.mfp-img {
 }
 .algorithm-tabs-main__description {
   width: calc(98% - 145px);
-}
-.algorithm-tabs-main__description p {
   margin: 0 0 10px 0;
   font-family: "Roboto-Light", sans-serif;
   line-height: 1.5;
 }
-.algorithm-tabs-main__description p:last-child {
+.algorithm-tabs-main__description:last-child {
   margin-bottom: 0;
+}
+.algorithm-tabs-main__description p {
+  margin: 0 0 10px 0;
 }
 .algorithm-tabs-main__title {
   margin: 0 0 21px 0;
