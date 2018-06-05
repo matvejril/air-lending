@@ -49,3 +49,36 @@
     }
   }
 }
+
+@media all and (max-width: 480px) {
+  .projects-gallery-nav {
+    &__item {
+      height: 80px;
+      border-radius: 0;
+    }
+
+    .slick-prev {
+      left: 5px;
+    }
+    .slick-next {
+      right: 5px;
+    }
+
+    .slick-dots {
+      z-index: 1;
+      button {
+        &:before {
+          font-size: 25px;
+        }
+      }
+      .slick-active {
+        button {
+          &:before {
+            font-size: 35px!important;
+            color: #accf50!important;
+          }
+        }
+      }
+    }
+  }
+}

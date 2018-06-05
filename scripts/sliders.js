@@ -39,7 +39,21 @@
             infinite: true,
             arrows: true,
             centerMode: true,
-            centerPadding: '0'
+            centerPadding: '0',
+            responsive: [
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: true,
+                        dots: true
+                        // centerMode: true,
+                        // centerPadding: '40px',
+
+                    }
+                }
+            ]
         });
 
 
@@ -83,7 +97,7 @@
             dots: false,
             infinite: false,
             focusOnSelect: true,
-            asNavFor: '.algorithm-tabs-main__list'
+            asNavFor: '.algorithm-tabs-main__list',
         });
 
 

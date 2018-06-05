@@ -4,7 +4,6 @@
   background-origin: content-box;
   width: 224px;
   height: 158px;
-  //padding: 0 10px;
   margin: 0 10px;
   img {
     margin: 0 auto;
@@ -35,5 +34,26 @@
   }
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .cms-item {
+    width: calc(~"100%/2 - 14px");
+    height: 97px;
+    margin: 0 0 16px 0;
+
+    img {
+      max-width: 134px;
+      transform: scale(0.7);
+    }
+
+    &__title {
+      font-size: 43px;
+    }
+    &__text {
+      font-size: 11px;
+    }
+
   }
 }

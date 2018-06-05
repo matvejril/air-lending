@@ -12,10 +12,25 @@
   &__list {
     max-width: 1355px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style-type: none;
   }
 }
+
+@media all and (max-width: 480px) {
+  .cms {
+    padding: 56px 0 23px 0;
+    &__title {
+      margin-bottom: 44px;
+      font-size: 18px;
+      line-height: 1.23;
+    }
+    &__list {
+      margin: 0 -7px;
+    }
+  }
+}
+
