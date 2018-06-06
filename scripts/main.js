@@ -14,6 +14,11 @@ window.onload = function () {
     require('./makedinput');
     // var sds = require('./test');
 
+    require('./accordeons');
+
+
+
+
 
     var hash = location.hash;
     if (hash && hash !== '') {

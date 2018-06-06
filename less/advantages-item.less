@@ -23,16 +23,27 @@
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 1024px) {
+  .advantages-item {
+    &__img {
+      height: 120px;
+      img {
+        transform: scale(0.8);
+      }
+    }
+    &__description {
+      font-size: 16px;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
   .advantages-item {
     width: calc(~"100%/2 - 5px");
     margin-bottom: 31px;
     &__img {
       height: 105px;
       margin-bottom: 3px;
-      img {
-        transform: scale(0.8);
-      }
     }
     &__description {
       font-size: 14px;

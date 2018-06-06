@@ -74,7 +74,27 @@
 }
 
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 1023px) {
+  .banner {
+    padding-top: 160px;
+    &__wrap {
+      margin-bottom: 70px;
+    }
+    &__content {
+      margin-bottom: 70px;
+    }
+    &__title {
+      margin-bottom: 30px;
+      font-size: 40px;
+    }
+    &__content {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
   .banner {
     padding: 139px 0 59px 0;
     &__wrap {
@@ -91,15 +111,19 @@
       display: none;
     }
     &__actions {
-      text-align: center;
+      width: 260px;
+      margin: 0 auto;
     }
     &__get-offers {
-      padding-left: 31px;
-      padding-right: 30px;
+      width: 100%;
+      height: 50px;
+      padding: 0;
       margin: 0 0 15px 0;
     }
     &__download-brief {
-      padding: 14px 71px 14px 71px;
+      width: 100%;
+      height: 50px;
+      padding: 0;
     }
 
   }

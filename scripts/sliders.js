@@ -42,7 +42,7 @@
             centerPadding: '0',
             responsive: [
                 {
-                    breakpoint: 480,
+                    breakpoint: 767,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -87,7 +87,11 @@
             infinite: false,
             useTransform: true,
             draggable: false,
-            speed: 200
+            speed: 200,
+            responsive: [{
+                breakpoint: 767,
+                settings: "unslick"
+            }]
         });
 
         $algorithmSliderNav.slick({
@@ -98,6 +102,10 @@
             infinite: false,
             focusOnSelect: true,
             asNavFor: '.algorithm-tabs-main__list',
+            responsive: [{
+                breakpoint: 767,
+                settings: "unslick"
+            }]
         });
 
 

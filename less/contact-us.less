@@ -12,6 +12,7 @@
     font-family: "Roboto-Regular", sans-serif;
   }
   &__phone {
+    display: inline-block;
     margin-right: 16px;
     font-size: 22px;
     color: #000000;
@@ -24,6 +25,21 @@
     transition: background-color 0.3s, color 0.3s;
     &:hover {
       color: #ed1c2b;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .contact-us {
+    text-align: center;
+    &__title {
+      margin-left: 0;
+      margin-bottom: 11px;
+      font-size: 24px;
+    }
+    &__phone {
+      margin: 0 0 12px 0;
+      font-size: 21px;
     }
   }
 }

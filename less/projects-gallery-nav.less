@@ -50,32 +50,46 @@
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 767px) {
   .projects-gallery-nav {
+    width: calc(~'100% - 80px');
     &__item {
       height: 80px;
       border-radius: 0;
     }
 
     .slick-prev {
-      left: 5px;
+      left: -30px;
     }
     .slick-next {
-      right: 5px;
+      right: -30px;
     }
 
     .slick-dots {
       z-index: 1;
       button {
         &:before {
+          opacity: 0.25;
           font-size: 25px;
         }
       }
+      button:hover {
+        &:before {
+          opacity: 0.25;
+        }
+      }
+
       .slick-active {
         button {
           &:before {
+            opacity: 1;
             font-size: 35px!important;
             color: #accf50!important;
+          }
+        }
+        button:hover {
+          &:before {
+            opacity: 1;
           }
         }
       }

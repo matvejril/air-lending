@@ -56,3 +56,54 @@
     line-height: 1.5;
   }
 }
+
+@media all and (max-width: 767px) {
+  .site-price {
+    padding: 27px 0 50px 0;
+    &__wrap {
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      margin-bottom: 12px;
+      font-size: 21px;
+      text-align: center;
+      letter-spacing: 0.8px;
+    }
+
+    &__view {
+      width: 92%;
+      text-align: center;
+      //margin-left: 21px;
+    }
+    &__view img {
+      width: 230px;
+      margin-left: 45px;
+    }
+
+    &__description {
+      width: 100%;
+      margin-bottom: 9px;
+    }
+    &__content {
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.44;
+    }
+    &__value {
+      margin-top: 8px;
+      margin-left: 12px;
+    }
+    &__num {
+      font-size: 45px;
+    }
+    &__sign {
+      margin-right: 6px;
+      font-size: 45px;
+    }
+    &__currency {
+      font-size: 47px;
+    }
+  }
+}
