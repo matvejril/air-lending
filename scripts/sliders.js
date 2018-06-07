@@ -42,15 +42,28 @@
             centerPadding: '0',
             responsive: [
                 {
+                    breakpoint: 1023,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1
+                    }
+                },
+                {
                     breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        arrows: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         arrows: true,
                         dots: true
-                        // centerMode: true,
-                        // centerPadding: '40px',
-
                     }
                 }
             ]
@@ -102,6 +115,7 @@
             infinite: false,
             focusOnSelect: true,
             asNavFor: '.algorithm-tabs-main__list',
+            settings: "slick",
             responsive: [{
                 breakpoint: 767,
                 settings: "unslick"

@@ -12,7 +12,8 @@
   }
 
   &__title {
-    margin: 0 0 21px 0;
+    height: 50px;
+    margin: 0 0 3px 0;
     font-family: "Roboto-Regular", sans-serif;
     font-size: 22px;
     color: #000000;
@@ -27,6 +28,19 @@
   }
 }
 
+@media all and (max-width: 1023px) {
+  .services-item {
+    &__title {
+      height: 42px;
+      font-size: 19px;
+      margin-bottom: 3px;
+    }
+    &__content {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}
 
 @media all and (max-width: 767px) {
   .services-item {
@@ -38,6 +52,7 @@
       margin-bottom: 5px;
     }
     &__title {
+      height: auto;
       margin-bottom: 0;
       font-size: 18px;
     }

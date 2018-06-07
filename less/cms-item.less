@@ -4,7 +4,7 @@
   background-origin: content-box;
   width: 224px;
   height: 158px;
-  margin: 0 10px;
+  margin: 0 10px 20px 10px;
   img {
     margin: 0 auto;
     align-self: center;
@@ -29,19 +29,30 @@
     font-size: 18px;
     color: #000000;
   }
-  &:first-child {
-    margin-left: 0;
-  }
-  &:last-child {
-    margin-right: 0;
+}
+
+@media all and (max-width: 1023px) {
+  .cms-item {
+    width: 160px;
+    height: 120px;
+    img {
+      transform: scale(0.8);
+    }
+    &__title {
+      font-size: 52px;
+    }
+    &__text {
+      font-size: 14px;
+    }
   }
 }
 
 @media all and (max-width: 767px) {
   .cms-item {
-    width: calc(~"100%/2 - 14px");
+    //width: calc(~"100%/2 - 14px");
+    width: 136px;
     height: 97px;
-    margin: 0 0 16px 0;
+    margin: 0 7px 15px 7px;
 
     img {
       max-width: 134px;
@@ -54,6 +65,16 @@
     &__text {
       font-size: 11px;
     }
+  }
+}
 
+@media all and (max-width: 480px) {
+  .cms-item {
+    &__title {
+      margin-bottom: 2px;
+    }
+    &:last-child {
+      background-color: transparent;
+    }
   }
 }

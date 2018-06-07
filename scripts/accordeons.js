@@ -47,14 +47,14 @@
                 if (algorithmItemTitle[n] === this) {
                     if (algorithmTabsMainItem[n].classList.contains('active')) {
                         algorithmTabsMainItem[n].classList.remove('active');
-                        $(algorithmTabsMainItemWrap[n]).slideUp(0);
+                        $(algorithmTabsMainItemWrap[n]).slideUp(300);
                     } else if(!algorithmTabsMainItem[n].classList.contains('active')) {
                         algorithmTabsMainItem[n].classList.add('active');
-                        $(algorithmTabsMainItemWrap[n]).slideDown(600);
+                        $(algorithmTabsMainItemWrap[n]).slideDown(400);
                     }
                 } else {
                     algorithmTabsMainItem[n].classList.remove('active');
-                    $(algorithmTabsMainItemWrap[n]).slideUp(0);
+                    $(algorithmTabsMainItemWrap[n]).slideUp(300);
                 }
             }
         }

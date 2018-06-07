@@ -10,12 +10,12 @@
   }
 
   &__description {
-    width: 62.5%;
+    width: calc(~"100% - 420px");
     padding-top: 28px;
   }
   &__view {
     text-align: right;
-    width: 31%;
+    width: 340px;
   }
 
   &__value {
@@ -39,8 +39,6 @@
     //font-weight: bold;
     //font-weight: normal;
   }
-
-
   &__title {
     font-family: "Geometria", sans-serif;
     color: #ffffff;
@@ -48,7 +46,6 @@
     font-weight: normal;
     margin: 0 0 18px 0;
   }
-
   &__content {
     max-width: 675px;
     font-family: "Roboto-Light", sans-serif;
@@ -57,31 +54,51 @@
   }
 }
 
+@media all and (max-width: 1023px) {
+  .site-price {
+    &__title {
+      font-size: 27px;
+    }
+    &__description {
+      padding-top: 0;
+      width: calc(~"100% - 390px");
+    }
+    &__content {
+      font-size: 15px;
+    }
+    &__sign {
+      font-size: 51px;
+    }
+    &__num {
+      font-size: 51px;
+    }
+    &__currency {
+      font-size: 51px;
+    }
+  }
+}
+
 @media all and (max-width: 767px) {
   .site-price {
-    padding: 27px 0 50px 0;
+    padding: 55px 0 50px 0;
     &__wrap {
       flex-direction: column-reverse;
       flex-wrap: wrap;
     }
-
     &__title {
       margin-bottom: 12px;
       font-size: 21px;
       text-align: center;
       letter-spacing: 0.8px;
     }
-
     &__view {
       width: 92%;
       text-align: center;
-      //margin-left: 21px;
     }
     &__view img {
       width: 230px;
       margin-left: 45px;
     }
-
     &__description {
       width: 100%;
       margin-bottom: 9px;
