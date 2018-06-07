@@ -81,17 +81,24 @@
     }
 
 
+
+
+
+
     // Слайдер с алгоритмом реализации
     var $algorithmSliderNav = $('.algorithm-tabs-nav');
-    var algorithmSliderMain = $('.algorithm-tabs-main__list');
+    var $algorithmSliderMain = $('.algorithm-tabs-main__list');
 
-    if (algorithmSliderMain) {
 
-        algorithmSliderMain.on("init", function () {
+    // var wid = $(window).width();
+
+    if ($algorithmSliderMain && $(window).width() >= 1006) {
+
+        $algorithmSliderMain.on("init", function () {
             $('.algorithm-tabs').css("visibility", "visible");
         });
 
-        $(algorithmSliderMain).slick({
+        $($algorithmSliderMain).slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
@@ -100,38 +107,43 @@
             infinite: false,
             useTransform: true,
             draggable: false,
-            speed: 200,
-            responsive: [{
-                breakpoint: 767,
-                settings: "unslick"
-            }]
+            speed: 200
         });
 
         $algorithmSliderNav.slick({
             slidesToShow: 5,
-            slidesToScroll: 5,
+            slidesToScroll: 1,
             arrows: false,
             dots: false,
             infinite: false,
             focusOnSelect: true,
             asNavFor: '.algorithm-tabs-main__list',
             settings: "slick",
-            responsive: [{
-                breakpoint: 767,
-                settings: "unslick"
-            }]
+            initialSlide: 0
+            // centerMode: false,
+            // responsive: [
+            //     {
+            //         breakpoint: 1280,
+            //         settings: {
+            //             slidesToShow: 4,
+            //             slidesToScroll: 1,
+            //             arrows: false,
+            //
+            //         }
+            //     }
+            // ]
         });
 
 
         var $algorithmNavItems = $(".algorithm-tabs-nav__item");
 
         // Свойства и методы слайдера с алгоритмом реализации
-        algorithmSliderMain.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
-            removeAnimateSlide(algorithmSliderMain);
+        $algorithmSliderMain.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
+            removeAnimateSlide($algorithmSliderMain);
         });
 
-        algorithmSliderMain.on('afterChange', function(event, slick, currentSlide) {
-            animateSlide(algorithmSliderMain);
+        $algorithmSliderMain.on('afterChange', function(event, slick, currentSlide) {
+            animateSlide($algorithmSliderMain);
 
         });
 
@@ -140,7 +152,31 @@
             $algorithmNavItems.removeClass('slick-current');
             $(this).addClass('slick-current');
         });
-
     }
+
+    // reslick only if it's not slick()
+    $(window).on('resize', function() {
+        if ($(window).width() <= 1006) {
+            if ($algorithmSliderMain.hasClass('slick-initialized')) {
+                $algorithmSliderMain.slick('unslick');
+            }
+            return
+        }
+
+        if (!$algorithmSliderMain.hasClass('slick-initialized')) {
+            return $algorithmSliderMain.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                dots: false,
+                infinite: false,
+                useTransform: true,
+                draggable: false,
+                speed: 200
+            });
+        }
+    })
+
 
 }());

@@ -5396,6 +5396,7 @@ img.mfp-img {
   text-transform: uppercase;
   outline: none;
   line-height: 1.15;
+  box-sizing: border-box;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -5444,15 +5445,15 @@ img.mfp-img {
     margin: 0 auto;
   }
   .banner__get-offers {
+    text-align: center;
     width: 100%;
     height: 50px;
-    padding: 0;
     margin: 0 0 15px 0;
   }
   .banner__download-brief {
     width: 100%;
-    height: 50px;
-    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
   }
 }
 .advantages {
@@ -5840,6 +5841,7 @@ img.mfp-img {
 .projects-gallery-nav {
   position: relative;
   max-width: 1080px;
+  padding: 0 70px;
   margin: 0 auto 0 auto;
 }
 .projects-gallery-nav__item {
@@ -5888,6 +5890,7 @@ img.mfp-img {
 @media all and (max-width: 1023px) {
   .projects-gallery-nav {
     width: calc(100% - 80px);
+    padding: 0;
   }
   .projects-gallery-nav__item {
     height: 80px;
@@ -5997,9 +6000,8 @@ img.mfp-img {
 }
 .projects-gallery-main__detail-case {
   width: 194px;
-  height: 50px;
   display: inline-block;
-  padding: 0;
+  padding: 14px 0 14px 0;
   margin-right: 10px;
   background: transparent;
   border: 3px solid #00a1e4;
@@ -6009,6 +6011,8 @@ img.mfp-img {
   color: #00a1e4;
   text-transform: uppercase;
   outline: none;
+  text-align: center;
+  box-sizing: border-box;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -6096,9 +6100,7 @@ img.mfp-img {
     margin: 0 auto;
   }
   .projects-gallery-main__detail-case {
-    padding: 0;
     margin: 0 0 15px 0;
-    height: 50px;
     width: 100%;
   }
   .projects-gallery-main__get-this-case {
@@ -6122,6 +6124,9 @@ img.mfp-img {
   text-align: center;
 }
 @media all and (max-width: 1023px) {
+  .algorithm {
+    padding-bottom: 30px;
+  }
   .algorithm__title {
     font-size: 38px;
   }
@@ -6135,8 +6140,9 @@ img.mfp-img {
     font-size: 24px;
   }
 }
-.algorithm-tabs {
-  visibility: hidden;
+.algorithm-tabs-nav {
+  width: auto;
+  margin: 0 auto;
 }
 .algorithm-tabs-nav__item {
   position: relative;
@@ -6222,7 +6228,42 @@ img.mfp-img {
 .algorithm-tabs-nav .slick-current ~ .algorithm-tabs-nav__item p:before {
   content: url("../images/algorithm/check-icon-empty.png");
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 1280px) {
+  .algorithm-tabs-nav {
+    max-width: 975px;
+  }
+  .algorithm-tabs-nav__item {
+    height: 70px;
+    margin-right: 25px;
+  }
+  .algorithm-tabs-nav__item p {
+    font-size: 12px;
+  }
+  .algorithm-tabs-nav__item p:before {
+    transform: scale(0.9);
+    margin-right: 4px;
+  }
+  .algorithm-tabs-nav__item:nth-child(1) {
+    width: 180px!important;
+  }
+  .algorithm-tabs-nav__item:nth-child(2) {
+    width: 175px!important;
+  }
+  .algorithm-tabs-nav__item:nth-child(3) {
+    width: 110px!important;
+  }
+  .algorithm-tabs-nav__item:nth-child(4) {
+    width: 175px!important;
+  }
+  .algorithm-tabs-nav__item:nth-child(5) {
+    width: 215px!important;
+  }
+  .algorithm-tabs-nav__item:after {
+    right: -20px;
+    top: 22%;
+  }
+}
+@media all and (max-width: 1023px) {
   .algorithm-tabs-nav {
     display: none;
   }
@@ -6273,7 +6314,7 @@ img.mfp-img {
   color: #44baeb;
   text-decoration: underline;
 }
-.algorithm-tabs-main__download-brief {
+.algorithm-tabs-main .banner__download-brief {
   padding: 14px 27px 14px 27px;
   margin-right: 10px;
   background: transparent;
@@ -6287,11 +6328,11 @@ img.mfp-img {
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
-.algorithm-tabs-main__download-brief:hover {
+.algorithm-tabs-main .banner__download-brief:hover {
   color: #ffffff;
   background-color: #00a1e4;
 }
-.algorithm-tabs-main__get-started {
+.algorithm-tabs-main .banner__get-offers {
   padding: 17px 28px 17px 29px;
   border: none;
   border-radius: 27px;
@@ -6304,7 +6345,7 @@ img.mfp-img {
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
-.algorithm-tabs-main__get-started:hover {
+.algorithm-tabs-main .banner__get-offers:hover {
   background-color: #00a1e4;
 }
 .algorithm-tabs-main__item-title {
@@ -6325,7 +6366,7 @@ img.mfp-img {
     font-size: 15px;
   }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 1023px) {
   .algorithm-tabs-main {
     padding: 0;
     background-color: transparent;
@@ -6350,6 +6391,7 @@ img.mfp-img {
     transform: rotate(90deg);
   }
   .algorithm-tabs-main__item-title {
+    position: relative;
     display: flex;
     height: 76px;
     width: 100%;
@@ -6419,16 +6461,15 @@ img.mfp-img {
     margin: 0 auto;
     text-align: center;
   }
-  .algorithm-tabs-main__download-brief {
+  .algorithm-tabs-main .banner__download-brief {
     width: 100%;
-    height: 50px;
-    padding: 0;
     margin: 0 auto 15px auto;
   }
-  .algorithm-tabs-main__get-started {
+  .algorithm-tabs-main .banner__get-offers {
+    padding: 14px 0 14px;
+    box-sizing: border-box;
     width: 100%;
     height: 50px;
-    padding: 0;
     margin: 0 auto;
   }
 }
@@ -7255,6 +7296,48 @@ img.mfp-img {
   }
   .popup__compliance {
     margin: 0 0 30px 0;
+  }
+}
+@media all and (max-width: 1023px) {
+  .algorithm-tabs .fadeInLeft,
+  .projects-gallery-main .fadeInLeft {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .algorithm-tabs .fadeInLeft.go,
+  .projects-gallery-main .fadeInLeft.go {
+    -webkit-animation-name: none;
+    animation-name: none;
+  }
+  .algorithm-tabs .fadeInRight,
+  .projects-gallery-main .fadeInRight {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .algorithm-tabs .fadeInRight.go,
+  .projects-gallery-main .fadeInRight.go {
+    -webkit-animation-name: none;
+    animation-name: none;
+  }
+  .algorithm-tabs .fadeInDown,
+  .projects-gallery-main .fadeInDown {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .algorithm-tabs .fadeInDown.go,
+  .projects-gallery-main .fadeInDown.go {
+    -webkit-animation-name: none;
+    animation-name: none;
+  }
+  .algorithm-tabs .fadeInUp,
+  .projects-gallery-main .fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .algorithm-tabs .fadeInUp.go,
+  .projects-gallery-main .fadeInUp.go {
+    -webkit-animation-name: none;
+    animation-name: none;
   }
 }
 @media all and (max-width: 767px) {
