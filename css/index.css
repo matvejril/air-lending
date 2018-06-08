@@ -6390,6 +6390,9 @@ img.mfp-img {
   .algorithm-tabs-main__item.active .algorithm-tabs-main__item-title p:after {
     transform: rotate(90deg);
   }
+  .algorithm-tabs-main .active ~ .algorithm-tabs-main__item p:before {
+    content: url(../images/algorithm/check-icon-empty.png);
+  }
   .algorithm-tabs-main__item-title {
     position: relative;
     display: flex;
@@ -7262,6 +7265,15 @@ img.mfp-img {
 }
 .popup label.error {
   display: none!important;
+}
+@media all and (max-width: 1024px) {
+  .popup__title {
+    font-size: 39px;
+    margin-bottom: 37px;
+  }
+  .popup__window {
+    width: 550px;
+  }
 }
 @media all and (max-width: 767px) {
   .popup__window {

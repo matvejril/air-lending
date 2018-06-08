@@ -37,6 +37,15 @@
         var algorithmItemTitle = document.querySelectorAll('.algorithm-tabs-main__item-title');
         var algorithmTabsMainItemWrap = document.querySelectorAll('.algorithm-tabs-main__item-wrap');
 
+        function initActive () {
+            var activeSlide = 0;
+
+            algorithmTabsMainItem[activeSlide].classList.add('active');
+            $(algorithmTabsMainItemWrap[activeSlide]).slideDown(400);
+        }
+
+        initActive();
+
         //навешиваем события клика на заколовок списка навигации
         for (var d = 0; d < algorithmTabsMainItem.length; d++) {
             algorithmItemTitle[d].addEventListener('click', algorithmAction)

@@ -131,8 +131,6 @@
       border-radius: 20px;
       display: block;
       &.active {
-
-
         .algorithm-tabs-main__item-title {
           border-bottom: 1px solid #cccccc;
           border-bottom-left-radius: 0;
@@ -147,9 +145,19 @@
             }
           }
         }
+        
       }
     }
 
+    .active {
+      & ~ .algorithm-tabs-main__item {
+        p {
+          &:before {
+            content: url(../images/algorithm/check-icon-empty.png);
+          }
+        }
+      }
+    }
 
     //title
     &__item-title {
