@@ -7278,13 +7278,13 @@ img.mfp-img {
 @media all and (max-width: 767px) {
   .popup__window {
     width: 320px;
-    padding-bottom: 58px;
+    padding-bottom: 30px;
   }
   .popup__head {
     margin-bottom: 15px;
   }
   .popup__title {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     font-size: 24px;
   }
   .popup__form .horizontal-group {
@@ -7292,10 +7292,14 @@ img.mfp-img {
   }
   .popup__form .horizontal-group input {
     width: 100%;
+    padding: 11px 20px 10px 25px;
     margin-bottom: 13px;
   }
   .popup__form .horizontal-group input:last-child {
     margin-bottom: 0;
+  }
+  .popup__form .horizontal-group textarea {
+    padding-top: 11px;
   }
   .popup__actions {
     flex-wrap: wrap;
@@ -7307,7 +7311,7 @@ img.mfp-img {
     margin: 0 auto;
   }
   .popup__compliance {
-    margin: 0 0 30px 0;
+    margin: 0 0 15px 0;
   }
 }
 @media all and (max-width: 1023px) {

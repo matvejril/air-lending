@@ -43,12 +43,12 @@
 
             if ($(window).width() <= 1005) {
                 $(algorithmTabsMainItem).removeClass('active');
-                $(algorithmTabsMainItemWrap).css('display', "none");
 
+                $(algorithmTabsMainItemWrap[activeSlide]).css('display', "block");
                 algorithmTabsMainItem[activeSlide].classList.add('active');
-                $(algorithmTabsMainItemWrap[activeSlide]).slideDown(400);
+                // $(algorithmTabsMainItemWrap[activeSlide]).css('display', "block");
             } else {
-                $(algorithmTabsMainItemWrap).css('display', "block");
+                // $(algorithmTabsMainItemWrap).css('display', "block");
             }
         }
 
@@ -77,8 +77,8 @@
         }
 
 
-        $(window).on('resize', function() {
-            initActive();
-        });
+        // $(window).on('resize', function() {
+        //     initActive();
+        // });
     }
 }());

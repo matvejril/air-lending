@@ -27,7 +27,8 @@
             useTransform: true,
             draggable: false,
             speed: 200,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            swipe: false
         });
 
         $jobsSliderNav.slick({
