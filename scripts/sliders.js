@@ -120,18 +120,6 @@
             asNavFor: '.algorithm-tabs-main__list',
             settings: "slick",
             initialSlide: 0
-            // centerMode: false,
-            // responsive: [
-            //     {
-            //         breakpoint: 1280,
-            //         settings: {
-            //             slidesToShow: 4,
-            //             slidesToScroll: 1,
-            //             arrows: false,
-            //
-            //         }
-            //     }
-            // ]
         });
 
 
@@ -160,6 +148,9 @@
             if ($algorithmSliderMain.hasClass('slick-initialized')) {
                 $algorithmSliderMain.slick('unslick');
             }
+            if ($algorithmSliderNav.hasClass('slick-initialized')) {
+                $algorithmSliderNav.slick('unslick');
+            }
             return
         }
 
@@ -176,6 +167,20 @@
                 speed: 200
             });
         }
+        if (!$algorithmSliderNav.hasClass('slick-initialized')) {
+            return $algorithmSliderNav.slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                infinite: false,
+                focusOnSelect: true,
+                asNavFor: '.algorithm-tabs-main__list',
+                settings: "slick",
+                initialSlide: 0
+            });
+        }
+
     })
 
 
