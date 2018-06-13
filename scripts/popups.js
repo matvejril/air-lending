@@ -1,6 +1,7 @@
 (function() {
 
     // Диалоговое окно main
+    var htmlBlock = document.querySelector('html');
     var bodyBlock = document.querySelector('body');
     var popupMain = document.querySelector('.popup');
     var showMainModalBtn = document.querySelectorAll('.js_main-modal');
@@ -18,7 +19,8 @@
             $(popupMain).fadeIn(300);
             // popupMain.style.display = 'block';
             bodyBlock.style.overflow = "hidden";
-            bodyBlock.style.paddingRight = "17px"
+            htmlBlock.style.overflow = "hidden";
+            htmlBlock.style.paddingRight = "17px"
         }
         function hideMobileDialog(e) {
             if (e.target === popupMain || this === closeMainModalBtn) {
@@ -26,7 +28,8 @@
 
                 $(popupMain).fadeOut(300);
                 setTimeout(function () {
-                    bodyBlock.style.paddingRight = "0";
+                    htmlBlock.style.paddingRight = "0";
+                    htmlBlock.style.overflow = "visible";
                     bodyBlock.style.overflow = "visible";
                 }, 300);
             }

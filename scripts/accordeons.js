@@ -61,7 +61,10 @@
 
         function algorithmAction() {
             for (var n = 0; n < algorithmTabsMainItem.length; n++) {
+
                 if (algorithmItemTitle[n] === this) {
+                    var thisPosition = $(algorithmTabsMainItem[n]).offset().top;
+
                     if (algorithmTabsMainItem[n].classList.contains('active')) {
                         algorithmTabsMainItem[n].classList.remove('active');
                         $(algorithmTabsMainItemWrap[n]).slideUp(300);
@@ -69,12 +72,14 @@
                         algorithmTabsMainItem[n].classList.add('active');
                         $(algorithmTabsMainItemWrap[n]).slideDown(400);
                     }
+                    $('body, html').scrollTop(thisPosition - 5)
                 } else {
                     algorithmTabsMainItem[n].classList.remove('active');
                     $(algorithmTabsMainItemWrap[n]).slideUp(300);
                 }
             }
         }
+
 
 
         // $(window).on('resize', function() {
