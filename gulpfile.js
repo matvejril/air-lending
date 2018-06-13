@@ -55,8 +55,8 @@ gulp.task('js', function() {
 });
 
 gulp.task('imagemin', function () {
-    return gulp.src('./src/images/**/*')
+    return gulp.src('./src/images1/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('./images'))
+        .pipe(gulp.dest('./css/images'))
 });
 
