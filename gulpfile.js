@@ -59,4 +59,3 @@ gulp.task('imagemin', function () {
         .pipe(imagemin())
         .pipe(gulp.dest('./css/images'))
 });
-

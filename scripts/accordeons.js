@@ -61,22 +61,42 @@
 
         function algorithmAction() {
             for (var n = 0; n < algorithmTabsMainItem.length; n++) {
-
                 if (algorithmItemTitle[n] === this) {
-                    var thisPosition = $(algorithmTabsMainItem[n]).offset().top;
-
                     if (algorithmTabsMainItem[n].classList.contains('active')) {
-                        algorithmTabsMainItem[n].classList.remove('active');
-                        $(algorithmTabsMainItemWrap[n]).slideUp(300);
+
+                        var thisPosition = algorithmTabsMainItem[n].getBoundingClientRect().top + pageYOffset;
+                        // window.scrollTo(0, thisPosition - 5);
+
+                        $("html, body").animate({ scrollTop: thisPosition - 5 }, 300);
+
+                        $(algorithmTabsMainItemWrap[n]).slideUp(0, function() {
+                            $(this).parent()[0].classList.remove('active');
+
+                        });
+
                     } else if(!algorithmTabsMainItem[n].classList.contains('active')) {
+
+                        var thisPosition = algorithmTabsMainItem[n].getBoundingClientRect().top + pageYOffset;
+                        // window.scrollTo(0, thisPosition - 5);
+
+                        $("html, body").animate({ scrollTop: thisPosition - 5 }, 300);
+
+
                         algorithmTabsMainItem[n].classList.add('active');
-                        $(algorithmTabsMainItemWrap[n]).slideDown(400);
+
+                        $(algorithmTabsMainItemWrap[n]).delay(300).slideDown(400, function() {
+                            // var thisPosition = $(this).parent()[0].getBoundingClientRect().top + pageYOffset;
+                            // window.scrollTo(0, thisPosition - 5);
+
+                            // $(this).parent()[0].classList.add('active');
+                        });
                     }
-                    $('body, html').scrollTop(thisPosition - 5)
                 } else {
                     algorithmTabsMainItem[n].classList.remove('active');
-                    $(algorithmTabsMainItemWrap[n]).slideUp(300);
+                    $(algorithmTabsMainItemWrap[n]).slideUp(0);
                 }
+
+
             }
         }
 
